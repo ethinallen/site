@@ -9,6 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "react-scroll-parallax": "^2.3.4",
     "react-typing-animation": "^1.6.2"
   },
   "scripts": {
