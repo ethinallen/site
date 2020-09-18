@@ -1,20 +1,9 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #073b4c;
 }
 
 .App-header {
-  /* background-color: #073b4c; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,26 +11,60 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url('./images/bkg.png');
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .bkg_containter {
+  float: center;
   background-image: url('./images/background.png');
   background-size: cover;
-  height: 100vh;
-  color: #f5f5f5;
+}
+
+.profilePic {
+  position: sticky;
+  left: 20px;
+  top: 20px;
+}
+
+.AdditionalInfo {
+  background-color: #073b4c;
+}
+
+.side-bar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  height: 100% !important;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  background-color: rgba(6, 214, 160, 0.25);
+  transition: 0.8s ease;
+}
+
+
+.toggle-menu {
+    height: 50px;
+    border-top-right-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+    position: absolute;
+    outline: none;
+    z-index: 0;
+    background-color: rgba(6, 214, 160, 0.4);
+    border-color: #06d6a0;
+    border-left: 0;
+}
+
+.toggle-menu:hover {
+  cursor: pointer;
 }
 
 a {
