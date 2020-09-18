@@ -3,6 +3,7 @@ import Typing from 'react-typing-animation';
 
 const Header = () => (
   <header className="App-header">
+
     <Typing speed={75}>
       <h1>My name is Drew Emery.</h1>
       <Typing.Delay ms={1000} />
