@@ -14,7 +14,7 @@ const Header = () => (
       <h1>I am seeking full time-cloud consultant positions.</h1>
       <Typing.Delay ms={1000} />
       <Typing.Backspace count={50} />
-      <h1>Download my <a href="/files/drewEmeryResume.pdf" target="_blank" download>resume</a> for my contact information.</h1>
+      <h1>Emai me at abemery@clemson.edu</h1>
     </Typing>
   </header>
 )

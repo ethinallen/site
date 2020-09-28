@@ -4,11 +4,12 @@
 }
 
 .App-header {
+  top: 30%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
   background-image: url('./images/bkg.png');
@@ -52,22 +53,22 @@
 
 
 .toggle-menu {
-    height: 50px;
-    border-top-right-radius: 15rem;
-    border-bottom-right-radius: 15rem;
-    position: absolute;
-    outline: none;
-    z-index: 0;
-    background-color: rgba(6, 214, 160, 0.4);
-    border-color: #06d6a0;
-    border-left: 0;
+  height: 50px;
+  border-top-right-radius: 15rem;
+  border-bottom-right-radius: 15rem;
+  position: absolute;
+  outline: none;
+  z-index: 0;
+  background-color: rgba(6, 214, 160, 0.4);
+  border-color: #06d6a0;
+  border-left: 0;
 }
 
 .toggle-menu:hover {
   cursor: pointer;
 }
 
-a {
+res {
   color : white;
   border-style: solid;
   border: '1px white';
