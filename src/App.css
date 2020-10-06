@@ -4,15 +4,14 @@
 }
 
 .App-header {
-  top: 30%;
   min-height: 100vh;
+  /* position: absolute */
+  vertical-align: middle;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
+  font-size: 4.7vh;
   color: white;
-  background-image: url('./images/bkg.png');
+  background-image: url('./images/background.png');
   background-size: cover;
   background-position: bottom;
   z-index: -1;
