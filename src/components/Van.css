@@ -1,6 +1,7 @@
 body {
   background-image: url('../images/bkg.png');
-  background-position: bottom;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
