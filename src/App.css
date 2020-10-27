@@ -9,7 +9,7 @@
   vertical-align: middle;
   display: flex;
   flex-direction: column;
-  font-size: 4.7vh;
+  /* font-size: 4.7vh; */
   color: white;
   background-image: url('./images/background.png');
   background-size: cover;
@@ -17,9 +17,6 @@
   z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 .bkg_containter {
   float: center;

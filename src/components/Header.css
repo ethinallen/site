@@ -1,0 +1,28 @@
+.download-button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 4.7vh;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color: white;
+
+}
+
+#typing-container {
+  font-size: 4.7vh;
+  margin-top: 0.67em;
+  font-weight: bold;
+  color: white;
+
+  position: absolute;
+  align-content: center;
+  top: 50%;
+  left: 15%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 1000px;
+  height: 100px;
+}
