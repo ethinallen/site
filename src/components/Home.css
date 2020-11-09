@@ -1,0 +1,7 @@
+#Home {
+  /* background-image: url('../images/background.png'); */
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+  background-color: blue;
+}

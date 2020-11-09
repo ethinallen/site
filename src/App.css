@@ -3,27 +3,6 @@
   background-color: #073b4c;
 }
 
-.App-header {
-  min-height: 100vh;
-  /* position: absolute */
-  vertical-align: middle;
-  display: flex;
-  flex-direction: column;
-  /* font-size: 4.7vh; */
-  color: white;
-  background-image: url('./images/background.png');
-  background-size: cover;
-  background-position: bottom;
-  z-index: -1;
-}
-
-
-.bkg_containter {
-  float: center;
-  background-image: url('./images/background.png');
-  background-size: cover;
-}
-
 .profilePic {
   position: sticky;
   left: 20px;
@@ -34,18 +13,6 @@
   background-color: #073b4c;
 }
 
-.side-bar {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  height: 100% !important;
-  width: 10%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0;
-  background-color: rgba(6, 214, 160, 0.25);
-  transition: 0.8s ease;
-}
 
 
 .toggle-menu {

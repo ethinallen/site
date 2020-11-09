@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './components/Van.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./components/Home.js"
 import Van from "./components/Van.js"

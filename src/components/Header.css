@@ -2,27 +2,44 @@
   border: none;
   background-color: inherit;
   cursor: pointer;
-  font-size: 4.7vh;
+  font-size: inherit;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
   color: white;
-
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
 }
 
 #typing-container {
-  font-size: 4.7vh;
-  margin-top: 0.67em;
+  font-size: 2vh;
   font-weight: bold;
   color: white;
 
   position: absolute;
   align-content: center;
-  top: 50%;
+  top: 20%;
   left: 15%;
-  margin-top: -50px;
   margin-left: -50px;
-  width: 1000px;
+  width: 80%;
   height: 100px;
+}
+
+.App-header {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
+  background-size: cover;
+}
+
+h2 {
+  padding-left: 5vw;
 }

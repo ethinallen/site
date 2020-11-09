@@ -18,18 +18,19 @@ function download() {
 
 const Header = () => (
   <header className="App-header">
+  <h2>hello</h2>
     <div id="typing-container">
       <Typing speed={50}>
-        <a>My name is Drew Emery.</a>
+        <h1>My name is Drew Emery.</h1>
         <Typing.Delay ms={1000} />
         <Typing.Backspace count={25} />
-        <a>I am graduating May 2021.</a>
+        <h1>I am graduating May 2021.</h1>
         <Typing.Delay ms={1000} />
         <Typing.Backspace count={25} />
-        <a>I am seeking full time-cloud consultant positions.</a>
+        <h1>I am seeking full time-cloud consultant positions.</h1>
         <Typing.Delay ms={1000} />
         <Typing.Backspace count={50} />
-        <a><button class="download-button" onClick={download}><u>Click me</u></button> to download my resume!</a>
+        <h1><button className="download-button" onClick={download}>Click me</button> to download my resume!</h1>
       </Typing>
     </div>
 
