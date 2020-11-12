@@ -1,39 +1,4 @@
 .App {
   text-align: center;
-  background-color: #073b4c;
-}
-
-.profilePic {
-  position: sticky;
-  left: 20px;
-  top: 20px;
-}
-
-.AdditionalInfo {
-  background-color: #073b4c;
-}
-
-
-
-.toggle-menu {
-  height: 50px;
-  border-top-right-radius: 15rem;
-  border-bottom-right-radius: 15rem;
-  position: absolute;
-  outline: none;
-  z-index: 0;
-  background-color: rgba(6, 214, 160, 0.4);
-  border-color: #06d6a0;
-  border-left: 0;
-}
-
-.toggle-menu:hover {
-  cursor: pointer;
-}
-
-res {
-  color : white;
-  border-style: solid;
-  border: '1px white';
-  padding: 10px;
+  background-color: black;
 }

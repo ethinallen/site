@@ -1,5 +1,6 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
+import Particles from 'react-particles-js';
 import './Header.css'
 
 function download() {
@@ -17,20 +18,21 @@ function download() {
 }
 
 const Header = () => (
+
   <header className="App-header">
-  <h2>hello</h2>
+
     <div id="typing-container">
-      <Typing speed={50}>
-        <h1>My name is Drew Emery.</h1>
+      <Typing speed={40}>
+        <span>My name is Drew Emery.</span>
+        <Typing.Delay ms={1000} />
+        <Typing.Backspace count={22} />
+        <span>I am graduating May 2021.</span>
         <Typing.Delay ms={1000} />
         <Typing.Backspace count={25} />
-        <h1>I am graduating May 2021.</h1>
-        <Typing.Delay ms={1000} />
-        <Typing.Backspace count={25} />
-        <h1>I am seeking full time-cloud consultant positions.</h1>
+        <span>I am seeking full time-cloud consultant positions.</span>
         <Typing.Delay ms={1000} />
         <Typing.Backspace count={50} />
-        <h1><button className="download-button" onClick={download}>Click me</button> to download my resume!</h1>
+        <span><button className="download-button" onClick={download}>Click me</button> to download my resume!</span>
       </Typing>
     </div>
 

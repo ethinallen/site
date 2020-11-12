@@ -1,7 +1,6 @@
-#Home {
-  /* background-image: url('../images/background.png'); */
+.Home {
+  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
   background-size: cover;
-  background-position: bottom;
-  z-index: -1;
-  background-color: blue;
+  background-color: black;
+  height: 100vh;
 }

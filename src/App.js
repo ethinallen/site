@@ -5,10 +5,8 @@ import Home from "./components/Home.js"
 import Van from "./components/Van.js"
 import Life from "./components/Life.js"
 
-
 function App() {
   return (
-
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
