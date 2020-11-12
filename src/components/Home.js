@@ -1,16 +1,18 @@
 import React from 'react';
 import './Home.css'
 import Header from './Header';
-import MenuComponent from "./Menu";
-import Card from "./Card"
+import CardComponent from "./Card";
+import { Card, Icon, Image, Menu, Segment} from 'semantic-ui-react';
+
 
 function Home() {
+
   return (
     <div className="Home">
-      <MenuComponent />
       <Header />
-      <Card />
+      <CardComponent />
     </div>
+
   );
 }
 
