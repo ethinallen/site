@@ -7,24 +7,22 @@
 }
 
 #gitter-body {
-  /* background-color: #f0ffff; */
-  background-color: #dcdcdc;
-  background-size: 100;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0% 0%;
 }
 
 #typing-container {
   font-size: 1vw;
-  color: black;
+  color: #dcdcdc;
   font-family: 'Roboto';
 }
 
 #title-container {
   background-color: none;
+  color: #dcdcdc;
   position: absolute;
   padding-top: 5vh;
   padding-left: 2vw;
   font-family: 'Merriweather';
-  color: black;
   font-size: 8vh;
   width: 20vw;
 }
