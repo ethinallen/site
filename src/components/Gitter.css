@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+#particle-container {
+  height: 100vh;
+  z-index: -1;
+}
+
+#gitter-body {
+  /* background-color: #f0ffff; */
+  background-color: #dcdcdc;
+  background-size: 100;
+}
+
 #typing-container {
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: black;
   font-family: 'Roboto';
 }
 
 #title-container {
+  background-color: none;
   position: absolute;
   padding-top: 5vh;
   padding-left: 2vw;
   font-family: 'Merriweather';
   color: black;
   font-size: 8vh;
+  width: 20vw;
 }
 
 #geet-container {

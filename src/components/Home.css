@@ -1,6 +1,6 @@
 .Home {
   background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
   background-size: cover;
-  background-color: black;
+  background-color: yellow;
   height: 100vh;
 }

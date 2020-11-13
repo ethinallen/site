@@ -1,11 +1,10 @@
 import React from 'react';
 import './Van.css';
 
-function Home() {
+function Van() {
   return (
-    <body>
-    </body>
+    <div className="Home"></div>
   );
 }
 
-export default Home;
+export default Van;
