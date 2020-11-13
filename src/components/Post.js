@@ -1,31 +1,18 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import './Life.css';
+import { Card, Image } from 'semantic-ui-react';
 
-
-class Post extends React.Component {
-
-  render() {
-    return (
-      <div className="CardContainer">
-        <h1> Hello, {this.props.name} </h1>
-
-        <Card>
-          <Card.Img variant="top" src="https://misc-site-storage.s3.us-east-2.amazonaws.com/lake.jpeg"/>
-
-          <Card.Title className="mb-2 text-muted">THE TITLE</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">Subtitle Sample Text</Card.Subtitle>
-
-          <Card.Body>
-            <Card.Title>Sample Post</Card.Title>
-            <Card.Text>
-              This the sample text for the body of the card.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-    );
-  }
+function Post(props) {
+  return (
+    <Card>
+      <Image src={props.imagepath} wrapped ui={false}   raised='True'/>
+      <Card.Content>
+        <Card.Header>{props.username}</Card.Header>
+        <Card.Meta>Latest Geet: {props.date}</Card.Meta>
+        <Card.Description>{props.geet}</Card.Description>
+      </Card.Content>
+    </Card>
+  )
 }
+
 
 export default Post;

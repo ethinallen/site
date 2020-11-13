@@ -1,6 +1,5 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
-import Particles from 'react-particles-js';
 import './Header.css'
 
 function download() {
