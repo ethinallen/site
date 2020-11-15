@@ -42,7 +42,7 @@ class Gitter extends Component {
         <div id='title-container'>
           <u>gitter.</u>
           <div id="description">
-            <Typing speed={10}>
+            <Typing speed={40}>
               <span>Twitter...<Typing.Delay ms={1000} /> but for Github commit messages</span>
             </Typing>
           </div>
@@ -55,50 +55,25 @@ class Gitter extends Component {
         </form>
 
         <div id="particle-container">
-          <Particles
+        <Particles
             params={{
-              "particles": {
-                  "number": {
-                      "value": 80,
-                      "density": {
-                          "enable": true,
-                          "value_area": 1500
-                      }
-                  },
-                  "line_linked": {
-                      "enable": true,
-                      "opacity": 0.05
-                  },
-                  "move": {
-                      "direction": "right",
-                      "speed": 0.05
-                  },
-                  "size": {
-                      "value": 1
-                  },
-                  "opacity": {
-                      "anim": {
-                          "enable": true,
-                          "speed": 1,
-                          "opacity_min": 0.05
-                      }
-                  }
-              },
-              "interactivity": {
-                  "events": {
-                      "onclick": {
-                          "enable": true,
-                          "mode": "push"
-                      }
-                  },
-                  "modes": {
-                      "push": {
-                          "particles_nb": 1
-                      }
-                  }
-              },
-              "retina_detect": true
-          }} />
+        	    "particles": {
+        	        "number": {
+        	            "value": 30
+        	        },
+        	        "size": {
+        	            "value": 4
+        	        }
+        	    },
+        	    "interactivity": {
+        	        "events": {
+        	            "onhover": {
+        	                "enable": true,
+        	                "mode": "repulse"
+        	            }
+        	        }
+        	    }
+        	}} />
         </div>
 
       </div>
