@@ -10,21 +10,35 @@
   background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0% 0%;
 }
 
-#typing-container {
-  font-size: 1vw;
+.field {
+  width: 50%;
+  color: black;
+  top: 50vh;
+  left: 30vw;
+  height: 56px;
+  align-self: center;
+  border-radius: 4px;
+  position: absolute;
+  background-color: none;
+  /* background-color: rgba(255,255,255,0.3); */
+}
+
+#description {
+  position: inherit;
+  margin-top: 5vh;
+  margin-left: 10px;
+  font-size: .6vw;
   color: #dcdcdc;
   font-family: 'Roboto';
 }
 
 #title-container {
-  background-color: none;
   color: #dcdcdc;
   position: absolute;
-  padding-top: 5vh;
-  padding-left: 2vw;
+  padding: 40px;
   font-family: 'Merriweather';
   font-size: 8vh;
-  width: 20vw;
+  width: 40vw;
 }
 
 #geet-container {
