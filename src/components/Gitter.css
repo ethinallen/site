@@ -3,7 +3,8 @@
 
 #particle-container {
   height: 100vh;
-  z-index: -1;
+  position: sticky;
+  z-index: 1;
 }
 
 #gitter-body {
@@ -19,6 +20,7 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   align-content: center;
+  z-index: 2;
 }
 
 #description {
@@ -40,16 +42,6 @@
 }
 
 #geet-container {
-  position: absolute;
-  top: 40vh;
-  width: 100vw;
-}
 
-
-.geet-column {
-  float: left;
-  width: 33.33%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  width: 50vw;
 }

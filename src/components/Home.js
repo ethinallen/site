@@ -9,10 +9,9 @@ function Home() {
   return (
     <div className="Home">
       <div className="bg_image"></div>
-      <Header />
-      <CardComponent />
+        <Header />
+        <CardComponent />
     </div>
-
   );
 }
 

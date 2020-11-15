@@ -1,12 +1,14 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react';
 
-const Geets = ({ geets }) => {
+function Geets({ geets }) {
+  console.log(geets);
+
   return (
-   <div>
+   <>
      {geets.map((geet) => (
        <Card>
-         <Image src={geet.avatarurl} wrapped ui={false}   raised='True'/>
+         <Image src={geet.avatarurl} wrapped ui={false} />
          <Card.Content>
            <Card.Header>{geet.username}</Card.Header>
            <Card.Meta>Latest Geet: {geet.date}</Card.Meta>
@@ -14,7 +16,7 @@ const Geets = ({ geets }) => {
          </Card.Content>
        </Card>
      ))}
-   </div>
+   </>
   )
 };
 
