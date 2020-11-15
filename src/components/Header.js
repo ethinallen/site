@@ -4,16 +4,11 @@ import Typing from 'react-typing-animation';
 import './Header.css'
 
 function download() {
-  // fake server request, getting the file url as response
   setTimeout(() => {
     const response = {
       file: 'https://misc-site-storage.s3.us-east-2.amazonaws.com/drewEmeryResume.pdf',
     };
-    // server sent the url to the file!
-    // now, let's download:
     window.open(response.file);
-    // you could also do:
-    // window.location.href = response.file;
   }, 100);
 }
 

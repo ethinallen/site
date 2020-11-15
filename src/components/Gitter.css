@@ -3,9 +3,10 @@
 
 #particle-container {
   overflow-x: hidden;
-  position: sticky;
+  position: fixed;
   background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0% 0%;
   height: 100vh;
+  width: 100vw;
   top: 0;
   z-index: -1;
 }
@@ -42,7 +43,8 @@
 
 #geet-container {
   position: absolute;
-  top: 2000px;
+  width: 30vw;
+  top: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
   align-content: center;
