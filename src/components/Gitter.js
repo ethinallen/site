@@ -3,6 +3,7 @@ import './Gitter.css'
 import Geets from './Geets'
 import SearchBar from './SearchBar'
 import Particles from 'react-particles-js'
+import Typing from 'react-typing-animation'
 
 class Gitter extends Component {
   constructor(props) {
@@ -41,7 +42,9 @@ class Gitter extends Component {
         <div id='title-container'>
           <u>gitter.</u>
           <div id="description">
-            <span>Twitter... but for Github commit messages</span>
+            <Typing speed={10}>
+              <span>Twitter...<Typing.Delay ms={1000} /> but for Github commit messages</span>
+            </Typing>
           </div>
         </div>
 
