@@ -5,18 +5,24 @@ function Geets({ geets }) {
   console.log(geets);
 
   return (
-   <>
+   <div id="geet-column">
      {geets.map((geet) => (
        <Card>
-         <Image src={geet.avatarurl} wrapped ui={false} />
-         <Card.Content>
-           <Card.Header>{geet.username}</Card.Header>
-           <Card.Meta>Latest Geet: {geet.date}</Card.Meta>
-           <Card.Description>{geet.message}</Card.Description>
-         </Card.Content>
-       </Card>
+        <Card.Content>
+          <Image
+            floated='right'
+            size='mini'
+            src={geet.avatarurl}
+          />
+          <Card.Header>{geet.username}</Card.Header>
+          <Card.Meta>Latest Geet: {geet.date}</Card.Meta>
+          <Card.Description>
+            {geet.message}
+          </Card.Description>
+        </Card.Content>
+      </Card>
      ))}
-   </>
+   </div>
   )
 };
 

@@ -43,10 +43,12 @@
 
 #geet-container {
   position: absolute;
-  width: 30vw;
-  top: 0px;
+  display: flex;
+  flex-direction: column;
   left: 50%;
+  min-height: 20vh;
+  top: 50vh;
+  height: auto;
   transform: translate(-50%, -50%);
   align-content: center;
-  z-index: 1;
 }

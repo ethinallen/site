@@ -17,6 +17,7 @@ function Gitter() {
         return response.json();
       })
       .then(function(myJson) {
+        console.log(myJson);
         updateGeets(myJson['response']);
       })
       authorRef.current.value = null;
