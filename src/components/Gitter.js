@@ -4,7 +4,6 @@ import Geets from './Geets'
 import SearchBar from './SearchBar'
 import Particles from 'react-particles-js'
 
-
 class Gitter extends Component {
   constructor(props) {
         super(props);

@@ -1,6 +1,12 @@
-.Home {
-  position: absolute;
+.bg_image {
+  height: 100vh;
+  width: 100vw;
   background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
   background-size: cover;
-  background-color: black;
+  background-color: grey;
+  z-index: 100;
+}
+
+.Home {
+  background-color: grey;
 }
