@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Typing from 'react-typing-animation';
 import './Header.css'
 
@@ -32,6 +33,8 @@ const Header = () => (
         <Typing.Delay ms={1000} />
         <Typing.Backspace count={50} />
         <span><button className="download-button" onClick={download}>Click me</button> to download my resume!</span>
+        <Typing.Delay ms={1000} />
+        <span>If you're going to loiter this long, you might as well check out <Link to="/gitter" >Gitter</Link> .</span>
       </Typing>
     </div>
 

@@ -10,8 +10,8 @@ function Gitter() {
   const baseURL = 'https://7vcvnq8z2g.execute-api.us-east-2.amazonaws.com/staging/fetch/'
 
     function handleSubmit(event) {
-      const author = authorRef.current.value
       event.preventDefault()
+      const author = authorRef.current.value
       fetch(baseURL + author)
       .then(function(response){
         return response.json();
@@ -41,11 +41,12 @@ function Gitter() {
             </div>
         </form>
 
-        <div id='geet-conatainer'>
+        <div id='geet-container'>
           <Geets geets={geets} />
         </div>
+
         <div id="particle-container">
-        <Particles
+          <Particles
             params={{
         	    "particles": {
         	        "number": {

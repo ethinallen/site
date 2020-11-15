@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 #particle-container {
-  height: 100vh;
+  overflow-x: hidden;
   position: sticky;
-  z-index: 1;
-}
-
-#gitter-body {
   background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0% 0%;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
 }
 
 .field {
@@ -42,6 +41,10 @@
 }
 
 #geet-container {
-
-  width: 50vw;
+  position: absolute;
+  top: 2000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-content: center;
+  z-index: 1;
 }
