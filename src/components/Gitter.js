@@ -3,8 +3,10 @@ import './Gitter.css'
 import Geets from './Geets'
 import Particles from 'react-particles-js'
 import Typing from 'react-typing-animation'
+import { Grid, Divider } from 'semantic-ui-react'
 
 function Gitter() {
+
   const [geets, updateGeets] = useState([]);
   const authorRef = useRef();
   const baseURL = 'https://7vcvnq8z2g.execute-api.us-east-2.amazonaws.com/staging/fetch/'
@@ -36,14 +38,17 @@ function Gitter() {
 
         </div>
 
+
         <form className="ui large form" onSubmit={handleSubmit}>
-            <div className="field">
-                <input ref={authorRef} type="text" placeholder="discover geets" />
-            </div>
+          <div className="field">
+            <input ref={authorRef} type="text" placeholder="discover geets" />
+          </div>
         </form>
 
-        <div id='geet-container'>
-          <Geets geets={geets} />
+        <div id="grid-container">
+          <Grid centered={true} columns={1}>
+            <Geets geets={geets} />
+          </Grid>
         </div>
 
         <div id="particle-container">
