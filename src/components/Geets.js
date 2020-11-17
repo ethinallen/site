@@ -8,7 +8,7 @@ function Geets({ geets }) {
     <>
      {geets.map((geet) => (
        <Grid.Row>
-          <Grid.Column width={4}>
+          <Grid.Column width={5}>
             <Card centered fluid>
               <Card.Content>
                 <Image
@@ -18,6 +18,7 @@ function Geets({ geets }) {
                 />
                 <Card.Header>{geet.username}</Card.Header>
                 <Card.Meta>Latest Geet: {geet.date}</Card.Meta>
+                <Card.Meta>Pushed to <a href={geet.repo_url} >{geet.repo_name}</a></Card.Meta>
                 <Card.Description>
                   {geet.message}
                 </Card.Description>

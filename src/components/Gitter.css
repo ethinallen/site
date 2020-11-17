@@ -5,8 +5,8 @@
   overflow-x: hidden;
   position: fixed;
   background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(45, 54, 76) 0%, rgb(37, 45, 63) 100%) repeat scroll 0% 0%;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   top: 0;
   z-index: -1;
 }

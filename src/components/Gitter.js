@@ -27,6 +27,7 @@ function Gitter() {
 
     return (
       <div id="gitter-body">
+
         <div id='title-container'>
           <u>gitter.</u>
 
