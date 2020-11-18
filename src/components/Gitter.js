@@ -54,7 +54,8 @@ function Gitter() {
 
         <div id="particle-container">
           <Particles
-            height={window.outerHeight}
+            height={window.innterHeight}
+            width={window.innterWidth}
             params={{
         	    "particles": {
         	        "number": {
