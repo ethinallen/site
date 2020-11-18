@@ -12,7 +12,7 @@
 }
 
 .field {
-  padding-top: 30vh;
+  padding-top: 50vh;
   width: 20vw;
   min-width: 200px;
   position: absolute;
@@ -41,6 +41,7 @@
   font-family: 'Merriweather';
   font-size: 8vh;
   width: 40vw;
+  min-width: 400px;
 }
 
 #geet-container {
@@ -49,7 +50,7 @@
   grid-column-gap: 50px;
   left: 50%;
   min-height: 20vh;
-  top: 50vh;
+  top: 60vh;
   height: auto;
   transform: translate(-50%, -50%);
   align-content: center;
@@ -57,5 +58,5 @@
 
 #grid-container {
   position: absolute;
-  margin-top: 25vh;
+  margin-top: 30vh;
 }

@@ -8,7 +8,7 @@ function Geets({ geets }) {
     <>
      {geets.map((geet) => (
        <Grid.Row>
-          <Grid.Column width={5}>
+          <Grid.Column width={8}>
             <Card centered fluid>
               <Card.Content>
                 <Image
