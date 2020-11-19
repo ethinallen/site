@@ -3,7 +3,7 @@ import './Gitter.css'
 import Geets from './Geets'
 import Particles from 'react-particles-js'
 import Typing from 'react-typing-animation'
-import { Grid, Divider } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 function Gitter() {
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from "./components/Home.js"
-import Van from "./components/Van.js"
-import Gitter from "./components/Gitter.js"
+import Home from "./components/Home/Home.js"
+import Van from "./components/Van/Van.js"
+import Gitter from "./components/Gitter/Gitter.js"
 
 function App() {
   return (
