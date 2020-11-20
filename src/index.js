@@ -7,13 +7,7 @@ import './index.css';
 import App from './App';
 import "semantic-ui-css/semantic.min.css";
 
-ReactGA.initialize('G-KN41TN8D9F', {
-  debug: true,
-  titleCase: false,
-  gaOptions: {
-    userId: 420
-  }
-});
+ReactGA.initialize('G-KN41TN8D9F');
 
 ReactDOM.render(
   <React.StrictMode>
