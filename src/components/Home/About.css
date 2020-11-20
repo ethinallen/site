@@ -1,0 +1,11 @@
+#about {
+  height: 100vh;
+  background-color: #ad7464;
+  opacity: .95;
+}
+
+#about #card-container {
+  position: absolute;
+  bottom: -80vh;
+  left: 5vh;
+}

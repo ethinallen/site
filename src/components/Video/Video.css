@@ -1,0 +1,6 @@
+.video-container {
+  width: contain;
+  border-style: solid;
+  border-width: 8px;
+  border-color: pink;
+}

@@ -3,7 +3,7 @@ import './Gitter.css'
 import Geets from './Geets'
 import Particles from 'react-particles-js'
 import Typing from 'react-typing-animation'
-import { Grid, Divider } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 function Gitter() {
 
@@ -59,17 +59,27 @@ function Gitter() {
             params={{
         	    "particles": {
         	        "number": {
-        	            "value": 30
+        	            "value": 80,
+        	            "density": {
+        	                "enable": false
+        	            }
         	        },
         	        "size": {
-        	            "value": 4
+        	            "value": 3,
+        	            "random": true
+        	        },
+        	        "move": {
+        	            "direction": "right",
+        	            "out_mode": "out"
+        	        },
+        	        "line_linked": {
+        	            "enable": false
         	        }
         	    },
         	    "interactivity": {
         	        "events": {
-        	            "onhover": {
+        	            "onclick": {
         	                "enable": true,
-        	                "mode": "repulse"
         	            }
         	        }
         	    }
