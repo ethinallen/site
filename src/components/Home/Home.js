@@ -3,7 +3,8 @@ import ReactGA from 'react-ga';
 
 import './Home.css'
 import Header from './Header';
-import About from './About';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 console.log('Window Path:\t', window.location.pathname);
 ReactGA.pageview(window.location.pathname + window.location.search);

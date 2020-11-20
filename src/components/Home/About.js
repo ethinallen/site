@@ -6,7 +6,7 @@ import './About.css'
 
 const About = () => (
   <div id="about">
-    <div id="title-container"><u>About Me</u></div>
+    <div id="title-container"><u>About</u></div>
     <div id="card-container">
       <Card>
         <Image
