@@ -65,17 +65,27 @@ function Gitter() {
             params={{
         	    "particles": {
         	        "number": {
-        	            "value": 30
+        	            "value": 80,
+        	            "density": {
+        	                "enable": false
+        	            }
         	        },
         	        "size": {
-        	            "value": 4
+        	            "value": 3,
+        	            "random": true
+        	        },
+        	        "move": {
+        	            "direction": "right",
+        	            "out_mode": "out"
+        	        },
+        	        "line_linked": {
+        	            "enable": false
         	        }
         	    },
         	    "interactivity": {
         	        "events": {
-        	            "onhover": {
+        	            "onclick": {
         	                "enable": true,
-        	                "mode": "repulse"
         	            }
         	        }
         	    }
