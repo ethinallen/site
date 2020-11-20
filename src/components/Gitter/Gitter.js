@@ -1,9 +1,15 @@
 import React, { useState, useRef } from 'react';
-import './Gitter.css'
-import Geets from './Geets'
 import Particles from 'react-particles-js'
 import Typing from 'react-typing-animation'
 import { Grid } from 'semantic-ui-react'
+import ReactGA from 'react-ga';
+import Geets from './Geets'
+
+import './Gitter.css'
+
+console.log(window.location.pathname);
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 function Gitter() {
 

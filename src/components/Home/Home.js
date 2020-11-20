@@ -1,7 +1,12 @@
 import React from 'react';
+import ReactGA from 'react-ga';
+
 import './Home.css'
 import Header from './Header';
 import About from './About';
+
+console.log('Window Path:\t', window.location.pathname);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function Home() {
 
@@ -9,7 +14,6 @@ function Home() {
     <>
       <div className="bg_image"></div>
       <Header />
-      <About />
     </>
   );
 }
