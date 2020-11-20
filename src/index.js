@@ -6,7 +6,6 @@ import ReactGA from 'react-ga';
 import './index.css';
 import App from './App';
 import "semantic-ui-css/semantic.min.css";
-import ReactGA from 'react-ga';
 
 ReactGA.initialize('G-KN41TN8D9F', {
   debug: true,
@@ -15,8 +14,6 @@ ReactGA.initialize('G-KN41TN8D9F', {
     userId: 420
   }
 });
-
-ReactGA.initialize('G-KN41TN8D9F');
 
 ReactDOM.render(
   <React.StrictMode>
