@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 
 import './Video.css';
 
-
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function Video() {
