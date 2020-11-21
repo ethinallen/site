@@ -2,14 +2,9 @@ import React, { useState, useRef } from 'react';
 import Particles from 'react-particles-js'
 import Typing from 'react-typing-animation'
 import { Grid } from 'semantic-ui-react'
-import ReactGA from 'react-ga';
 import Geets from './Geets'
 
 import './Gitter.css'
-
-console.log(window.location.pathname);
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 function Gitter() {
 
@@ -17,19 +12,19 @@ function Gitter() {
   const authorRef = useRef();
   const baseURL = 'https://7vcvnq8z2g.execute-api.us-east-2.amazonaws.com/staging/fetch/'
 
-    function handleSubmit(event) {
-      event.preventDefault()
-      const author = authorRef.current.value
-      fetch(baseURL + author)
-      .then(function(response){
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        updateGeets(myJson['response']);
-      })
-      authorRef.current.value = null;
-    }
+  function handleSubmit(event) {
+    event.preventDefault()
+    const author = authorRef.current.value
+    fetch(baseURL + author)
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(myJson) {
+      console.log(myJson);
+      updateGeets(myJson['response']);
+    })
+    authorRef.current.value = null;
+  }
 
     return (
       <div id="gitter-body">
@@ -48,7 +43,7 @@ function Gitter() {
 
         <form className="ui large form" onSubmit={handleSubmit}>
           <div className="field">
-            <input ref={authorRef} type="text" placeholder="discover geets" />
+            <input ref={authorRef} type="text" placeholder="enter Github username" />
           </div>
         </form>
 
