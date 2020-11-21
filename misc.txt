@@ -1,9 +1,39 @@
-<h1>My name is Andrew Emery.</h1>
-<Typing.Delay ms={1000} />
-<Typing.Backspace count={25} />
-<h1>I graduate May 2021.</h1>
-<Typing.Delay ms={1000} />
-<Typing.Backspace count={25} />
-<h1>I am seeking full-time cloud consulting positions.</h1>
-<Typing.Delay ms={1000} />
-<Typing.Backspace count={50} />
+```
+  I think this is just how it's going to have to be
+```
+
+import React, { Component } from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'
+import Main from './components/pages/Main';
+import ReactGA from 'react-ga';
+
+
+const history = createHistory()
+ReactGA.initialize('UA-00000000-1');
+history.listen((location, action) => {
+    ReactGA.pageview(location.pathname + location.search);
+    console.log(location.pathname)
+});
+
+class App extends Component {
+
+    render() {
+        return (
+
+            <Router history={history}>
+                <div className="App">
+
+                    <Switch>
+                        <Route exact path="/" component={Main} />
+                        <Route exact path="/signup" component={SignupLayout} />
+                        <Route component={PublicLayout} />
+                    </Switch>
+
+                </div>
+            </Router>
+        );
+    }
+}
+
+export default App;
