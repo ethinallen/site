@@ -1,12 +1,65 @@
 .bg_image {
+  position: fixed;
   height: 100vh;
   width: 100vw;
   background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
   background-size: cover;
   background-color: grey;
-  z-index: 100;
+  z-index: -100;
 }
 
 li {
   margin: 5vh;
+}
+
+.App-header {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+}
+
+#typing-container {
+  font-size: 3vh;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  align-content: center;
+  top: 10%;
+  left: 15%;
+  margin-left: -50px;
+  width: 50%;
+  height: 100px;
+  min-width: 350px;
+}
+
+.download-button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+#about {
+  position: absolute;
+  top: 100vh;
+  left: 5vw;
+  height: 70vh;
+  width: 60vw;
+  background-color: #ad7464;
+  z-index: 1;
+}
+
+#about #card-container {
+  position: absolute;
+  left: 30px;
+  top: 20vh;
 }
