@@ -8,13 +8,13 @@ import Van from "./components/Van/Van.js"
 import Gitter from "./components/Gitter/Gitter.js"
 import Video from "./components/Video/Video.js"
 
-const trackingId = "G-KN41TN8D9F";
-ReactGA.initialize(trackingId);
+ReactGA.initialize("G-KN41TN8D9F");
 
 const history = createBrowserHistory();
 
 // Initialize google analytics page view tracking
 history.listen(location => {
+  console.log(location.pathname);
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
