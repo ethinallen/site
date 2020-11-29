@@ -10,12 +10,13 @@
   color: white;
   position: absolute;
   align-content: center;
-  top: 0%;
+  top: 10%;
   left: 15%;
   margin-left: -50px;
-  width: 80%;
+  width: 50%;
   height: 100px;
   min-width: 350px;
+  padding-bottom: 15px;
 }
 
 .download-button {

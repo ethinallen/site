@@ -18,16 +18,18 @@ const Header = () => (
 
     <div id="typing-container">
       <Typing speed={40}>
-        <li>My name is Drew Emery.</li>
+        <span>My name is Drew Emery.</span>
         <Typing.Delay ms={1000} />
-        <li>I am graduating May 2021.</li>
+        <Typing.Backspace count={23} />
+        <span>I am graduating May 2021.</span>
         <Typing.Delay ms={1000} />
-        <li>I am seeking full time-cloud consultant positions.</li>
+        <Typing.Backspace count={25} />
+        <span>I am seeking full time work.</span>
         <Typing.Delay ms={1000} />
-        <li><button className="download-button" onClick={download}>Click me</button> to download my resume! </li>
-        <Typing.Backspace count={1} />
+        <Typing.Backspace count={28} />
+        <span><button className="download-button" onClick={download}>Click me</button> to download my resume! </span>
         <Typing.Delay ms={5000} />
-        <li>If you're going to loiter this long...<Typing.Delay ms={1500} /> you might as well check out <Link to="/gitter" >Gitter</Link></li>
+        <span>If you're going to loiter this long...<Typing.Delay ms={1500} /> you might as well check out <Link to="/gitter" >Gitter</Link></span>
       </Typing>
     </div>
 
