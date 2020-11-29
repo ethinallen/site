@@ -52,14 +52,25 @@ li {
   position: absolute;
   top: 100vh;
   left: 5vw;
-  height: 70vh;
-  width: 60vw;
+  height: 50vh;
+  width: 20vw;
   background-color: #ad7464;
   z-index: 1;
 }
 
 #about #card-container {
   position: absolute;
-  left: 30px;
+  left: 10vw;
   top: 20vh;
+}
+
+#about #title-container {
+  color: #dcdcdc;
+  position: absolute;
+  margin: 5px;
+  padding: 40px;
+  font-family: 'Merriweather';
+  font-size: 8vh;
+  width: 40vw;
+  min-width: 400px;
 }
