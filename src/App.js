@@ -7,6 +7,7 @@ import Home from "./components/Home/Home.js"
 import Van from "./components/Van/Van.js"
 import Gitter from "./components/Gitter/Gitter.js"
 import Video from "./components/Video/Video.js"
+import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
 
 ReactGA.initialize("G-KN41TN8D9F");
 
@@ -20,14 +21,15 @@ history.listen(location => {
 });
 
 const App = () => (
-      <Router history={history}>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/van" component={Van} />
-          <Route exact path="/video" component={Video} />
-          <Route exact path="/gitter" component={Gitter} />
-        </Switch>
-      </Router>
+  <Router history={history}>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/van" component={Van} />
+      <Route exact path="/video" component={Video} />
+      <Route exact path="/gitter" component={Gitter} />
+      <Route exact path="/ubersetzen" component={Ubersetzen} />
+    </Switch>
+  </Router>
 )
 
 export default App;
