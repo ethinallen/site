@@ -9,14 +9,18 @@ import Gitter from "./components/Gitter/Gitter.js"
 import Video from "./components/Video/Video.js"
 import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
 
+const history = createBrowserHistory();
+
 ReactGA.initialize("UA-183493843-1", {
     debug: true,
     gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
   });
-ReactGA.pageview("/");
+
+ReactGA.set({ page: history.location.pathname }); // Update the user's current page
+ReactGA.pageview(history.location.pathname);
 
 export default function App(){
-  const history = createBrowserHistory();
+  // const history = createBrowserHistory();
 
   // Initialize google analytics page view tracking
   history.listen(location => {
