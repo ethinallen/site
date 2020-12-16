@@ -2,8 +2,6 @@ import React from 'react'
 import { Card, Grid, Image } from 'semantic-ui-react';
 
 function Geets({ geets }) {
-  console.log(geets);
-
   return (
     <>
      {geets.map((geet) => (

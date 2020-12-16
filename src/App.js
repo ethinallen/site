@@ -13,11 +13,19 @@ ReactGA.initialize("UA-183493843-1", {
     debug: true,
     gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
   });
-ReactGA.pageview("testing what thefuck ");
 
 export default function App(){
-
   const history = createBrowserHistory();
+
+  // Initialize google analytics page view tracking
+  history.listen(location => {
+    ReactGA.initialize("UA-183493843-1", {
+        debug: true,
+        gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
+      });
+    ReactGA.set({ page: location.pathname }); // Update the user's current page
+    ReactGA.pageview(location.pathname); // Record a pageview for the given page
+  });
 
   return(
   <Router history={history}>
