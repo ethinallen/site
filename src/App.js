@@ -9,18 +9,17 @@ import Gitter from "./components/Gitter/Gitter.js"
 import Video from "./components/Video/Video.js"
 import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
 
-ReactGA.initialize("G-KN41TN8D9F");
+ReactGA.initialize("UA-183493843-1", {
+    debug: true,
+    gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
+  });
+ReactGA.pageview("testing what thefuck ");
 
-const history = createBrowserHistory();
+export default function App(){
 
-// Initialize google analytics page view tracking
-history.listen(location => {
-  console.log(location.pathname);
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
+  const history = createBrowserHistory();
 
-const App = () => (
+  return(
   <Router history={history}>
     <Switch>
       <Route exact path="/" component={Home} />
@@ -30,6 +29,5 @@ const App = () => (
       <Route exact path="/ubersetzen" component={Ubersetzen} />
     </Switch>
   </Router>
-)
-
-export default App;
+);
+}
