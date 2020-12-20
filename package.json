@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "aws-amplify": "^3.3.3",
+    "aws-amplify": "^3.3.13",
     "bootstrap": "^4.5.3",
     "faker": "^5.1.0",
     "react": "^16.13.1",
