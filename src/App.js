@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 import Home from "./components/Home/Home.js"
 import Van from "./components/Van/Van.js"
 import Gitter from "./components/Gitter/Gitter.js"
-import Video from "./components/Video/Video.js"
+import Video from "./components/Video/VideoPlayer.js"
 import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
 
 const history = createBrowserHistory();
