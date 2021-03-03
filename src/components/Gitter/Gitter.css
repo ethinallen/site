@@ -33,29 +33,30 @@
 }
 
 #title-container {
-  color: #dcdcdc;
   position: absolute;
+
+  color: #dcdcdc;
   margin: 40px;
   padding: 40px;
   font-family: 'Merriweather';
   font-size: 8vh;
   width: 40vw;
   min-width: 250px;
+
+  top:0;
+  left: 0;
 }
 
-#geet-container {
-  position: absolute;
-  display: grid;
-  grid-column-gap: 50px;
-  left: 50%;
-  min-height: 20vh;
-  top: 60vh;
-  height: auto;
-  transform: translate(-50%, -50%);
-  align-content: center;
-}
+
 
 #grid-container {
-  position: absolute;
+  /* position: relative; */
   margin-top: 35vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
