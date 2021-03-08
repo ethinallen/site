@@ -5,6 +5,7 @@
 }
 
 #typing-container {
+  display: flex;
   font-size: 3vh;
   font-weight: bold;
   color: white;
@@ -24,12 +25,12 @@
   background-color: inherit;
   cursor: pointer;
   font-size: inherit;
-  margin-left: 0;
-  margin-right: 0;
+  /* margin-left: 0;
+  margin-right: 0; */
   font-weight: bold;
-  color: white;
-  border-radius: 5px;
+  color: blue;
+  /* border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: white;
+  border-color: white; */
 }

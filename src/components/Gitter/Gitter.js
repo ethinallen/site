@@ -32,7 +32,7 @@ function Gitter() {
           <u>gitter.</u>
 
           <div id="description">
-            <Typing speed={40}>
+            <Typing speed={10}>
               <span>Twitter...<Typing.Delay ms={1000} /> but for Github commit messages</span>
             </Typing>
           </div>
@@ -42,7 +42,7 @@ function Gitter() {
 
         <form className="ui large form" onSubmit={handleSubmit}>
           <div className="field">
-            <input ref={authorRef} type="text" placeholder="enter Github username" />
+            <input ref={authorRef} type="text" placeholder="enter Github username (like ethinallen)" />
           </div>
         </form>
 
@@ -59,7 +59,7 @@ function Gitter() {
             params={{
         	    "particles": {
         	        "number": {
-        	            "value": 80,
+        	            "value": 50,
         	            "density": {
         	                "enable": false
         	            }
