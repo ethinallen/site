@@ -15,7 +15,8 @@
   padding-top: 50vh;
   width: 20vw;
   min-width: 200px;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -50,13 +51,13 @@
 
 
 #grid-container {
-  /* position: relative; */
-  margin-top: 35vh;
+  position: relative;
+  /* margin-top: 35vh; */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
