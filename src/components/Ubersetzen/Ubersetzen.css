@@ -1,14 +1,25 @@
+
+
 .Home {
   background-color: #000000;
   height: 100vh;
 }
 
+.welcome {
+  position: absolute;
+  left: 25%;
+}
+
 #greenBox {
   z-index: 10;
-  position: absolute;
+  border-radius: 3em;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* position: absolute; */
   background-color: #1DB954;
-  width: 80vw;
-  height: 80vh;
-  top: 10vh;
-  left: 10vw;
+  width: 90vw;
+  height: 90vh;
 }
