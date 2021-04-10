@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import * as $ from "jquery";
+import { Card, Grid, Image } from 'semantic-ui-react';
+
+
 import { authEndpoint, clientId, redirectUri, scopes } from "./config";
 import hash from "./hash";
 import queryString from 'query-string';
@@ -9,7 +11,8 @@ class Ubersetzen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAuthenticatedWithSpotify: false
+      isAuthenticatedWithSpotify: false,
+      serverData: {}
     };
   }
 
@@ -21,29 +24,53 @@ class Ubersetzen extends Component {
     fetch('https://api.spotify.com/v1/me', {
       headers: {'Authorization': 'Bearer ' + accessToken}
     }).then(response => response.json())
-    .then(data => this.setState({
+    .then((data) => this.setState({
       user: {
         name: data.display_name
       }
     }))
 
-    fetch(' 	https://api.spotify.com/v1/me/player/currently-playing', {
+    fetch('https://api.spotify.com/v1/me/player/currently-playing', {
       headers: {'Authorization': 'Bearer ' + accessToken}
-    })
-    .then(response => {
-      console.log(response.json())
-    })
+    }).then(response => response.json())
+
+    .then((data) => this.setState({
+      serverData: {
+        imageURL: data["item"]["album"]["images"][0]["url"],
+        songTitle: data["item"]["name"],
+        artist: data["item"]["artists"][0]["name"]
+      }
+
+    }))
+
+
   }
 
 
   render() {
+
     return (
       <div className="Home">
-        <div id="greenBox">
-          <div className="button_container">
+        <div id="contentContainer">
+        {this.state.user ?
 
-            <div className="Line" />
-          </div>
+          <Card>
+            <Card.Content>
+              <Image
+                floated='right'
+                size='medium'
+                src={this.state.serverData.imageURL}
+              />
+              <Card.Header>{this.state.serverData.songTitle}</Card.Header>
+              <Card.Meta>{this.state.serverData.artist}</Card.Meta>
+            </Card.Content>
+          </Card> : <button onClick={() => {
+            window.location = window.location.href.includes('localhost')
+              ? 'http://localhost:8888/login'
+              : 'https://better-playlists-backend.herokuapp.com/login' }
+          }
+          style={{padding: '20px', 'font-size': '50px', 'margin-top': '20px'}}>Sign in with Spotify</button>
+        }
         </div>
       </div>
     );

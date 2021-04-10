@@ -1,8 +1,14 @@
-
-
 .Home {
-  background-color: #000000;
+  /* background-color: #1DB954; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+
+.ui.card,
+.ui.cards>.card {
+  background-color: #1DB954;
 }
 
 .welcome {
@@ -10,16 +16,19 @@
   left: 25%;
 }
 
-#greenBox {
+#contentContainer {
   z-index: 10;
-  border-radius: 3em;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  /* position: absolute; */
-  background-color: #1DB954;
-  width: 90vw;
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191414;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sampleText {
+  position: absolute;
+  color: #1DB954;
+  top: 10%;
+  font-size: 8em;
 }

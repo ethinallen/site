@@ -12,7 +12,7 @@ import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
 const history = createBrowserHistory();
 
 ReactGA.initialize("UA-183493843-1", {
-    debug: true,
+    debug: false,
     gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
   });
 
