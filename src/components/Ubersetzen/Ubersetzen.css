@@ -1,5 +1,4 @@
 .Home {
-  /* background-color: #1DB954; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +25,32 @@
   height: 100vh;
 }
 
-.sampleText {
-  position: absolute;
+.signInButton {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  min-width: 150px;
+  min-height: 20px;
+  width: 10vw;
+  background-color: black;
   color: #1DB954;
-  top: 10%;
-  font-size: 8em;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.signInButton:hover {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  min-width: 150px;
+  min-height: 20px;
+  width: 10vw;
+  background-color: #1DB954;
+  color: black;
+  font-size: 1em;
+  font-weight: bolder;
 }
