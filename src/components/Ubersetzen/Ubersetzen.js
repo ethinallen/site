@@ -65,9 +65,7 @@ class Ubersetzen extends Component {
               <Card.Meta>{this.state.serverData.artist}</Card.Meta>
             </Card.Content>
           </Card> : <button onClick={() => {
-            window.location = window.location.href.includes('localhost')
-              ? 'http://localhost:8888/login'
-              : 'https://3.234.25.124:8888/login' }
+            window.location = 'http://3.234.25.124:8888/login' }
           }
           style={{padding: '20px', 'font-size': '50px', 'margin-top': '20px'}}>Sign in with Spotify</button>
         }
