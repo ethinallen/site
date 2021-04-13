@@ -88,7 +88,7 @@ class Ubersetzen extends Component {
               {this.state.serverData.native_lyrics}
             </div>
 
-            : <div> waiting on lyrics... </div>
+            : <div>waiting on lyrics... </div>
           }
         </div>
         </div>
