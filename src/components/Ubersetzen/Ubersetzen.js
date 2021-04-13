@@ -7,6 +7,11 @@ import hash from "./hash";
 import queryString from 'query-string';
 import './Ubersetzen.css';
 
+function getAllTheShit() {
+  fetch('localhost:8888/lyrics/capital_bra/110')
+  .then(response => response.json()))
+}
+
 class Ubersetzen extends Component {
   constructor(props) {
     super(props);
@@ -21,14 +26,6 @@ class Ubersetzen extends Component {
     let accessToken = parsed.access_token;
     if (!accessToken)
       return;
-    fetch('https://api.spotify.com/v1/me', {
-      headers: {'Authorization': 'Bearer ' + accessToken}
-    }).then(response => response.json())
-    .then((data) => this.setState({
-      user: {
-        name: data.display_name
-      }
-    }))
 
     fetch('https://api.spotify.com/v1/me/player/currently-playing', {
       headers: {'Authorization': 'Bearer ' + accessToken}
@@ -48,11 +45,11 @@ class Ubersetzen extends Component {
 
 
   render() {
-
+    getAllTheShit();
     return (
       <div className="Home">
         <div id="contentContainer">
-        {this.state.user ?
+        {this.state.serverData ?
 
           <Card>
             <Card.Content>
