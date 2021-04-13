@@ -7,11 +7,6 @@ import hash from "./hash";
 import queryString from 'query-string';
 import './Ubersetzen.css';
 
-function getAllTheShit() {
-  fetch('localhost:8888/lyrics/capital_bra/110')
-  .then(response => response.json()))
-}
-
 class Ubersetzen extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +21,14 @@ class Ubersetzen extends Component {
     let accessToken = parsed.access_token;
     if (!accessToken)
       return;
+    fetch('https://api.spotify.com/v1/me', {
+      headers: {'Authorization': 'Bearer ' + accessToken}
+    }).then(response => response.json())
+    .then((data) => this.setState({
+      user: {
+        name: data.display_name
+      }
+    }))
 
     fetch('https://api.spotify.com/v1/me/player/currently-playing', {
       headers: {'Authorization': 'Bearer ' + accessToken}
@@ -37,20 +40,27 @@ class Ubersetzen extends Component {
         songTitle: data["item"]["name"],
         artist: data["item"]["artists"][0]["name"]
       }
+    })).then(() =>
+      fetch('http://3.234.25.124:8888/lyrics/' + this.state.serverData.artist + '/' + this.state.serverData.songTitle)
+      .then(response => response.json())
+      .then((data) => this.setState({
+        serverData: {
+          native_lyrics: data['lyrics']
+        }
+      }))
+    )
 
-    }))
 
 
   }
 
 
   render() {
-    getAllTheShit();
+
     return (
       <div className="Home">
         <div id="contentContainer">
-        {this.state.serverData ?
-
+        {this.state.user ?
           <Card>
             <Card.Content>
               <Image
@@ -70,7 +80,20 @@ class Ubersetzen extends Component {
             }
             >Sign in with Spotify</div>
         }
+
+        <div id="lyric-container">
+          {
+            this.state.serverData.native_lyrics ?
+            <div id="lyrics">
+              {this.state.serverData.native_lyrics}
+            </div>
+
+            : <div> waiting on lyrics... </div>
+          }
         </div>
+        </div>
+
+
       </div>
     );
   }
