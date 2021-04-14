@@ -55,6 +55,16 @@
   font-weight: bolder;
 }
 
+#cardContainer {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #lyric-container {
+  position: relative;
+  top: 20vh;
   color: white;
 }

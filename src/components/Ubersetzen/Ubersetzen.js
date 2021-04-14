@@ -59,40 +59,47 @@ class Ubersetzen extends Component {
 
     return (
       <div className="Home">
-        <div id="contentContainer">
-        {this.state.user ?
-          <Card>
-            <Card.Content>
-              <Image
-                floated='right'
-                size='medium'
-                src={this.state.serverData.imageURL}
-              />
-              <Card.Header>{this.state.serverData.songTitle}</Card.Header>
-              <Card.Meta>{this.state.serverData.artist}</Card.Meta>
-            </Card.Content>
-          </Card>
+        <Grid columns={1} divided>
+          <div id="contentContainer">
+          <div id="cardContainer">
+            {this.state.user ?
+                  <Card>
+                    <Card.Content>
+                      <Image
+                      floated='right'
+                      size='large'
+                      src={this.state.serverData.imageURL}
+                      />
+                      <Card.Header>{this.state.serverData.songTitle}</Card.Header>
+                      <Card.Meta>{this.state.serverData.artist}</Card.Meta>
+                    </Card.Content>
+                  </Card>
 
-          : <div className="signInButton" onClick={() => {
-            window.location = window.location.href.includes('localhost')
-              ? 'http://localhost:8888/login'
-              : 'http://3.234.25.124:8888/login' }
-            }
-            >Sign in with Spotify</div>
-        }
 
-        <div id="lyric-container">
-          {
-            this.state.serverData.native_lyrics ?
-            <div id="lyrics">
-              {this.state.serverData.native_lyrics}
+              : <div className="signInButton" onClick={() => {
+                window.location = window.location.href.includes('localhost')
+                  ? 'http://localhost:8888/login'
+                  : 'http://3.234.25.124:8888/login' }
+                }
+                >Sign in with Spotify</div>
+              }
             </div>
 
-            : <div>waiting on lyrics... </div>
-          }
-        </div>
-        </div>
+            <div id="lyricsContainer">
+              <div id="lyric-container">
+                {
+                  this.state.serverData.native_lyrics ?
+                  <div id="lyrics">
+                    {this.state.serverData.native_lyrics}
+                  </div>
 
+                  : <div>waiting on lyrics... </div>
+                }
+              </div>
+
+            </div>
+        </div>
+      </Grid>
 
       </div>
     );
