@@ -77,8 +77,8 @@ class Ubersetzen extends Component {
 
               : <div className="signInButton" onClick={() => {
                 window.location = window.location.href.includes('localhost')
-                  ? 'http://localhost:8888/login'
-                  : 'http://3.234.25.124:8888/login' }
+                  ? 'https://localhost:8888/login'
+                  : 'https://arbeiter.xyz:8888/login' }
                 }
                 >Sign in with Spotify</div>
               }
