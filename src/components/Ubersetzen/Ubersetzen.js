@@ -41,7 +41,7 @@ class Ubersetzen extends Component {
         artist: data["item"]["artists"][0]["name"]
       }
     })).then(() =>
-      fetch('http://3.234.25.124:8888/lyrics/' + this.state.serverData.artist + '/' + this.state.serverData.songTitle)
+      fetch('http://arbeiter.xyz:8888/lyrics/' + this.state.serverData.artist + '/' + this.state.serverData.songTitle)
       .then(response => response.json())
       .then((data) => this.setState({
         serverData: {
@@ -59,7 +59,6 @@ class Ubersetzen extends Component {
 
     return (
       <div className="Home">
-        <Grid columns={1} divided>
           <div id="contentContainer">
           <div id="cardContainer">
             {this.state.user ?
@@ -90,7 +89,9 @@ class Ubersetzen extends Component {
                 {
                   this.state.serverData.native_lyrics ?
                   <div id="lyrics">
-                    {this.state.serverData.native_lyrics}
+                  {this.state.serverData.native_lyrics.split("\n").map((i,key) => {
+            return <div key={key}>{i}</div>;
+        })}
                   </div>
 
                   : <div>waiting on lyrics... </div>
@@ -99,7 +100,6 @@ class Ubersetzen extends Component {
 
             </div>
         </div>
-      </Grid>
 
       </div>
     );

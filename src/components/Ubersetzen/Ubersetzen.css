@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .ui.card,
@@ -17,9 +17,6 @@
 
 #contentContainer {
   z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #191414;
   width: 100vw;
   height: 100vh;
@@ -56,15 +53,20 @@
 }
 
 #cardContainer {
-  height: 40vh;
+  position: relative;
+  top:10vh;
+  height: 20vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5vh;
 }
 
 #lyric-container {
   position: relative;
-  top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
