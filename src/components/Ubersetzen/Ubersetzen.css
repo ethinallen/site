@@ -1,72 +1,91 @@
-.Home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.ui.card,
-.ui.cards>.card {
-  background-color: #1DB954;
-}
-
-.welcome {
-  position: absolute;
-  left: 25%;
-}
-
-#contentContainer {
+.contentContainer {
+  min-height: 100vh;
   z-index: 10;
   background-color: #191414;
-  width: 100vw;
-  height: 100vh;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 5vh;
+
+  justify-content: center;
+  display: flex;
+}
+
+#header {
+  top:2vh;
+  position: relative;
+  color: #1DB954;
+
+  font-size: 3em;
+  font-family: 'Roboto';
+
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 .signInButton {
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 7vh;
+
   min-width: 150px;
   min-height: 20px;
+
+  font-size: 1em;
+  font-weight: bolder;
+
   width: 10vw;
   background-color: black;
   color: #1DB954;
-  font-size: 1em;
-  font-weight: bolder;
 }
 
 .signInButton:hover {
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 7vh;
+  width: 10vw;
+
   min-width: 150px;
   min-height: 20px;
-  width: 10vw;
-  background-color: #1DB954;
-  color: black;
+
   font-size: 1em;
   font-weight: bolder;
+
+  background-color: #1DB954;
+  color: black;
 }
 
 #cardContainer {
   position: relative;
-  top:10vh;
-  height: 20vh;
-  width: 100vw;
+
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
 #lyric-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   color: white;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 1vh;
+  background-color: rgba(169,169,169, .25);
+
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Merriweather';
+
+  border-radius: 10px;
 }
