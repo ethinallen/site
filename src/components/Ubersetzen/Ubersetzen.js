@@ -86,14 +86,16 @@ class Ubersetzen extends Component {
 
           <div id="lyric-container">
             {
-              this.state.lyrics.native_lyrics ?
+              this.state.lyrics.native_lyrics  ?
                 <div id="lyrics">
                   {this.state.lyrics.native_lyrics.split("\n").map((i,key) => {
                   return <div key={key}>{i}</div> ;
                 })}
               </div>
 
-              : <div><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
+              : (this.state.user ?
+                  <div><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
+                : <div> Please log in to get started! </div>)
             }
           </div>
         </div>
