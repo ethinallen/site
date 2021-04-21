@@ -3,6 +3,9 @@ import { Card, Grid, Image } from 'semantic-ui-react';
 import queryString from 'query-string';
 import ReactLoading from 'react-loading';
 
+
+
+
 import './Ubersetzen.css';
 
 class Ubersetzen extends Component {
@@ -40,7 +43,7 @@ class Ubersetzen extends Component {
         artist: data["item"]["artists"][0]["name"]
       }
     })).then(() =>
-      fetch('http://3.234.25.124:8888/lyrics/' + this.state.serverData.artist + '/' + this.state.serverData.songTitle)
+      fetch('https://arbeiter.xyz:8888/lyrics/' + this.state.serverData.artist + '/' + this.state.serverData.songTitle)
       .then(response => response.json())
       .then((data) => this.setState({
         lyrics: {
@@ -78,7 +81,7 @@ class Ubersetzen extends Component {
                 : <div className="signInButton" onClick={() => {
                   window.location = window.location.href.includes('localhost')
                     ? 'http://localhost:8888/login'
-                    : 'http://3.234.25.124:8888/login' }
+                    : 'https://arbeiter.xyz:8888/login' }
                   }
                   >Sign in with Spotify</div>
             }
