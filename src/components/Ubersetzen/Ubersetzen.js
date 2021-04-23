@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { Card, Grid, Image } from 'semantic-ui-react';
 import queryString from 'query-string';
 import ReactLoading from 'react-loading';
-
-
-
+import Lyrics from './lyricComponent';
+import CurrentPlay from './currentlyPlayingCard';
 
 import './Ubersetzen.css';
 
@@ -14,7 +13,8 @@ class Ubersetzen extends Component {
     this.state = {
       isAuthenticatedWithSpotify: false,
       serverData: {},
-      lyrics : {}
+      lyrics : {},
+      token : {}
     };
   }
 
@@ -23,6 +23,7 @@ class Ubersetzen extends Component {
     let accessToken = parsed.access_token;
     if (!accessToken)
       return;
+    else this.state.token = accessToken;
     fetch('https://api.spotify.com/v1/me', {
       headers: {'Authorization': 'Bearer ' + accessToken}
     }).then(response => response.json())
@@ -65,17 +66,7 @@ class Ubersetzen extends Component {
             <div id="cardContainer">
               {
                 this.state.user ?
-                    <Card>
-                      <Card.Content>
-                        <Image
-                        floated='right'
-                        size='large'
-                        src={this.state.serverData.imageURL}
-                        />
-                        <Card.Header>{this.state.serverData.songTitle}</Card.Header>
-                        <Card.Meta>{this.state.serverData.artist}</Card.Meta>
-                      </Card.Content>
-                    </Card>
+                    <CurrentPlay token={this.state.token}/>
 
 
                 : <div className="signInButton" onClick={() => {
@@ -84,21 +75,6 @@ class Ubersetzen extends Component {
                     : 'https://arbeiter.xyz:8888/login' }
                   }
                   >Sign in with Spotify</div>
-            }
-          </div>
-
-          <div id="lyric-container">
-            {
-              this.state.lyrics.native_lyrics  ?
-                <div id="lyrics">
-                  {this.state.lyrics.native_lyrics.split("\n").map((i,key) => {
-                  return <div key={key}>{i}</div> ;
-                })}
-              </div>
-
-              : (this.state.user ?
-                  <div><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
-                : <div id="plz"> Please log in to get started! </div>)
             }
           </div>
         </div>
