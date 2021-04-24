@@ -27,7 +27,10 @@ function Ubersetzen(props) {
 
 
   if (!token) {
-    return <Login token={setToken} />
+    return (
+    <div className="contentContainer">
+      <Login token={setToken} />
+    </div>)
   }
 
     return (
