@@ -37,7 +37,6 @@ export default function App(){
       <Route exact path="/video" component={Video} />
       <Route exact path="/gitter" component={Gitter} />
       <Route exact path="/ubersetzen" component={Ubersetzen} />
-      <Route exact path="/translator" component={Translator} />
     </Switch>
   </Router>
 );
