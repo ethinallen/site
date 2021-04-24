@@ -5,6 +5,7 @@ export async function fetcher(token){
             {
                 method: 'GET',
                 headers: {'Authorization': 'Bearer ' + token},
+
             }
         ).then(res=>{
             const data = res.json()
@@ -13,9 +14,11 @@ export async function fetcher(token){
             }
             //but we also should reject if network
             //succeeds but api returns >400 code
-            reject(data);
+          reject(data);
+
         }).catch(err=>{ // fetch api will error on network problems
             reject(err);
         })
     });
 }
+
