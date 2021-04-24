@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import ReactLoading from 'react-loading';
 
 import useSWR from 'swr';
 import fetch from 'unfetch';
@@ -35,9 +35,7 @@ function Lyrics(props) {
 
   if(data.isLoading || data.isError){
       return(
-          <>
-            <h1>We are loading...</h1>
-          </>
+        <div><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
       )
   }
 

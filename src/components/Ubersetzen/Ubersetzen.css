@@ -9,15 +9,18 @@
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 5vh;
+  padding-top: 10vh;
 
   justify-content: center;
   display: flex;
 }
 
 #header {
-  top:2vh;
-  position: relative;
+  top:4vh;
+  position: absolute;
   color: #1DB954;
+  left:1vw;
+
 
   font-size: 3em;
   font-family: 'Roboto';
@@ -25,8 +28,10 @@
 }
 
 .contentColumn {
+
   display: flex;
   flex-direction: column;
+
 }
 
 .signInButton {
@@ -89,6 +94,9 @@
   padding-right: 5vw;
   padding-bottom: 1vh;
   background-color: rgba(169,169,169, .25);
+
+  min-width: 337px;
+  max-width: 30vw;
 
   font-weight: bold;
   font-size: 1.2em;

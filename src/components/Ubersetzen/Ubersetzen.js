@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, Grid, Image } from 'semantic-ui-react';
 import queryString from 'query-string';
-import ReactLoading from 'react-loading';
 import Login from './Login';
 
 import Lyrics from './lyricComponent';
@@ -27,8 +26,6 @@ function Ubersetzen(props) {
   })
 
 
-
-
   if (!token) {
     return <Login token={setToken} />
   }
@@ -36,8 +33,8 @@ function Ubersetzen(props) {
     return (
       <>
       <div className="contentContainer">
+        <div id="header"> Ubersetzen </div>
         <div className="contentColumn">
-          <div id="header"> Ubersetzen </div>
             <CurrentPlay token={token} />
             <Lyrics data={current} token={token}/>
           </div>

@@ -32,7 +32,7 @@ function CurrentPlay(props) {
   }, [currentData.data])
 
   if (!currentData) return <div>loading...</div>
-  return   <div>
+  return   <div id="cardContainer">
             <Card>
               <Card.Content>
                 <Image
