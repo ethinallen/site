@@ -8,7 +8,7 @@ import Van from "./components/Van/Van.js"
 import Gitter from "./components/Gitter/Gitter.js"
 import Video from "./components/Video/VideoPlayer.js"
 import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
-import Stocks from "./components/Stocks/Stocks.js"
+import Translator from "./components/Ubersetzen/Translator.js"
 
 const history = createBrowserHistory();
 
@@ -37,7 +37,7 @@ export default function App(){
       <Route exact path="/video" component={Video} />
       <Route exact path="/gitter" component={Gitter} />
       <Route exact path="/ubersetzen" component={Ubersetzen} />
-      <Route exact path="/stocks" component={Stocks} />
+      <Route exact path="/translator" component={Translator} />
     </Switch>
   </Router>
 );

@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 import { useStocks } from '../../net/stocks'
 
 export default function Stocks(props){
-
     // using state in functional components with hooks
     const [currentAsk, setCurrentAsk] = useState(0)
 
@@ -14,13 +13,14 @@ export default function Stocks(props){
     /**
      * This is another react hook that will fire AFTER every render and perform an 'effect'.
      * We add a dependency array at the end to indicate we only want to call this function
-     * after a render if any of the values of whatever items are in the dependency array 
+     * after a render if any of the values of whatever items are in the dependency array
      * have changed. This way, we can safely set state inside this hook and avoid
      * infinite re-renders.
      */
     useEffect(() => {
         if(stocks.data){
-            setCurrentAsk(stocks.data.quoteResponse.result[0].ask)
+          setCurrentAsk(stocks.data.quoteResponse.result[0].ask)
+
         }
     }, [stocks.data])
 
