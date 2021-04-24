@@ -3,8 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useStocks } from '../../net/stocks'
 
-export default function Stocks(){
-
+export default function Stocks(props){
     // using state in functional components with hooks
     const [currentAsk, setCurrentAsk] = useState(0)
 
@@ -21,6 +20,7 @@ export default function Stocks(){
     useEffect(() => {
         if(stocks.data){
           setCurrentAsk(stocks.data.quoteResponse.result[0].ask)
+
         }
     }, [stocks.data])
 
