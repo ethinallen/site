@@ -10,7 +10,6 @@ class Body extends Component {
     return (
       <>
         <Header />
-        <About />
       </>
     );
   }
