@@ -1,4 +1,6 @@
 import React from 'react';
+import { Card, Grid, Image } from 'semantic-ui-react';
+
 
 export default function Login({setToken}) {
   return(
@@ -9,6 +11,7 @@ export default function Login({setToken}) {
           : 'https://arbeiter.xyz:8888/login' }
         }
         >Sign in with Spotify</div>
+
       </div>
   )
 }
