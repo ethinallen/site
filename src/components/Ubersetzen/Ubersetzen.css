@@ -92,7 +92,7 @@
   color: white;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-bottom: 1vh;
+  line-height: 1.5em;
   background-color: rgba(169,169,169, .25);
 
   min-width: 337px;

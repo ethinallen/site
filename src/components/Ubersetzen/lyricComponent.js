@@ -24,13 +24,13 @@ function Lyrics(props) {
   const current = useCurrent(props.token)
   const data = useLyrics(currentArtist, currentSong)
 
-  console.log()
-
   useEffect(() => {
-      if(current.data){
+    if (current.data) {
+      if(current.data.currently_playing_type && current.data.currently_playing_type == 'track'){
         setCurrentArtist(current.data["item"]["artists"][0]["name"]);
         setCurrentSong(current.data["item"]["name"]);
       }
+    }
   }, [props.data])
 
   if(data.isLoading || data.isError){
@@ -40,6 +40,14 @@ function Lyrics(props) {
   }
 
   console.log(data);
+
+  if (current.data == undefined || current.data.currently_playing_type != 'track') {
+    return <div id="lyric-container">
+              <div id="lyrics">
+                Start playing a song on Spotify to begin!
+              </div>
+            </div>
+  }
 
   return <div id="lyric-container">
           <div id="lyrics">
