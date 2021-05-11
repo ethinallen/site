@@ -5,14 +5,6 @@ import { useCurrent } from '../../net/currentPlaying';
 import { Card, Grid, Image } from 'semantic-ui-react';
 import Lyrics from './lyricComponent';
 
-import useSWR from 'swr';
-import fetch from 'unfetch';
-
-const fetcher = (token) =>
-fetch('https://api.spotify.com/v1/me/player/currently-playing', {
-  headers: {'Authorization': 'Bearer ' + token}
-}).then(response => response.json())
-
 
 function CurrentPlay(props) {
   const [currentArtist, setCurrentArtist] = useState(0)

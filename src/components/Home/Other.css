@@ -1,0 +1,14 @@
+#other {
+  position: absolute;
+  width: 40vw;
+
+  height: 80vh;
+  top: 10vh;
+  min-width: 350px;
+
+  right: 20vw;
+
+  border-width: 2px;
+  border-color: white;
+  z-index: 100;
+}
