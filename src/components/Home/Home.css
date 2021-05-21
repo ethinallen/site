@@ -18,6 +18,7 @@ li {
   align-content: center;
   top: 10%;
   left: 15%;
+  line-height: 1.44em;
   margin-left: -50px;
   width: 50%;
   height: 100px;
@@ -29,7 +30,6 @@ li {
   background-color: inherit;
   cursor: pointer;
   font-size: inherit;
-  margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
