@@ -15,6 +15,7 @@ function download() {
 const Header = () => (
 
   <header className="App-header">
+    <div className="bg_image"></div>
 
     <div id="typing-container">
       <Typing speed={40}>

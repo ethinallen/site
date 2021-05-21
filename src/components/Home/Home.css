@@ -1,12 +1,4 @@
-.bg_image {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
-  background-size: cover;
-  background-color: grey;
-  z-index: -100;
-}
+
 
 li {
   margin: 5vh;
@@ -26,6 +18,7 @@ li {
   align-content: center;
   top: 10%;
   left: 15%;
+  line-height: 1.44em;
   margin-left: -50px;
   width: 50%;
   height: 100px;
@@ -37,7 +30,6 @@ li {
   background-color: inherit;
   cursor: pointer;
   font-size: inherit;
-  margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
@@ -46,31 +38,4 @@ li {
   border-width: 1px;
   border-style: solid;
   border-color: white;
-}
-
-#about {
-  position: absolute;
-  top: 100vh;
-  left: 5vw;
-  height: 50vh;
-  width: 20vw;
-  background-color: #ad7464;
-  z-index: 1;
-}
-
-#about #card-container {
-  position: absolute;
-  left: 10vw;
-  top: 20vh;
-}
-
-#about #title-container {
-  color: #dcdcdc;
-  position: absolute;
-  margin: 5px;
-  padding: 40px;
-  font-family: 'Merriweather';
-  font-size: 8vh;
-  width: 40vw;
-  min-width: 400px;
 }

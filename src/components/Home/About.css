@@ -1,11 +1,33 @@
+.ring {
+  position: absolute;
+  z-index: 2;
+}
+
 #about {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
   height: 100vh;
-  background-color: #ad7464;
-  opacity: .95;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #about #card-container {
+    position: relative;
+    right: 10vw;
+  /* left: 10vw; */
+  /* top: 20vh; */
+}
+
+#about #title-container {
+  color: #dcdcdc;
   position: absolute;
-  bottom: -80vh;
-  left: 5vh;
+  margin: 5px;
+  padding: 40px;
+  font-family: 'Merriweather';
+  font-size: 8vh;
+  width: 40vw;
+  min-width: 400px;
 }
