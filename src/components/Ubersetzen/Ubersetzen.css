@@ -92,20 +92,15 @@
   color: white;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-bottom: 1vh;
+  line-height: 1.5em;
   background-color: rgba(169,169,169, .25);
 
   min-width: 337px;
-  max-width: 30vw;
+  max-width: 40vw;
 
   font-weight: bold;
   font-size: 1.2em;
   font-family: 'Merriweather';
 
   border-radius: 10px;
-}
-
-#plz {
-  align-items: center;
-  justify-content: center;
 }
