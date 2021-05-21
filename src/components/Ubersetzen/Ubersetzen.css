@@ -80,10 +80,11 @@
   padding-bottom: 5vh;
 }
 
-#lyric-container {
+.lyric-container {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 
@@ -92,15 +93,28 @@
   color: white;
   padding-left: 5vw;
   padding-right: 5vw;
+  /* margin: 10vw; */
+  margin-left: 5vw;
   line-height: 1.5em;
   background-color: rgba(169,169,169, .25);
 
   min-width: 337px;
-  max-width: 40vw;
+  width: 90vw;
 
   font-weight: bold;
   font-size: 1.2em;
   font-family: 'Merriweather';
 
   border-radius: 10px;
+}
+
+.lyrics {
+  min-width: 320px;
+  max-width: 35vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#loading {
+  color: white;
 }

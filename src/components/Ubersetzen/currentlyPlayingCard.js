@@ -3,15 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useCurrent } from '../../net/currentPlaying';
 
 import { Card, Grid, Image } from 'semantic-ui-react';
-import Lyrics from './lyricComponent';
-
-import useSWR from 'swr';
-import fetch from 'unfetch';
-
-const fetcher = (token) =>
-fetch('https://api.spotify.com/v1/me/player/currently-playing', {
-  headers: {'Authorization': 'Bearer ' + token}
-}).then(response => response.json())
 
 
 function CurrentPlay(props) {
@@ -24,7 +15,7 @@ function CurrentPlay(props) {
   console.log(currentData);
 
   useEffect(() => {
-      if(currentData.data && currentData.data.currently_playing_type == 'track'){
+      if(currentData.data && currentData.data.currently_playing_type === 'track'){
         setCurrentArtist(currentData.data["item"]["artists"][0]["name"]);
         setCurrentSong(currentData.data["item"]["name"]);
         setCurrentURL(currentData.data["item"]["album"]["images"][0]["url"]);
@@ -32,7 +23,7 @@ function CurrentPlay(props) {
   }, [currentData.data])
 
   if (!currentData) return <div>loading...</div>
-  if (currentData.data == undefined || currentData.data.currently_playing_type != 'track') return <div id="cardContainer">
+  if (currentData.data === undefined || currentData.data.currently_playing_type !== 'track') return <div id="cardContainer">
             <Card>
               <Card.Content>
                 <Image

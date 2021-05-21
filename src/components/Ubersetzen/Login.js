@@ -1,6 +1,4 @@
 import React from 'react';
-import { Card, Grid, Image } from 'semantic-ui-react';
-
 
 export default function Login({setToken}) {
   return(
