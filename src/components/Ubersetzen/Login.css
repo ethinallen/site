@@ -1,3 +1,77 @@
-#Login-page {
+
+#jumbotron {
+  width: 90%;
+  max-width: 800px;
+  min-width: 350px;
+
+  height: 30vh;
+  min-height: 200px;
+
+  background-color: #edddd4;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#description {
+  color: #2c3e50;
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+
+  margin-bottom: 1rem;
+}
+
+#description-container {
+  height: 80vh;
+  width: 100vw;
+  top: 15vh;
+
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#description-header {
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  font-size: 2.5rem;
+
+}
+
+#button-container {
+
+  display: flex;
+  justify-content: center;
+}
+
+.signInButton {
+  border-radius: 8px;
+  height: 7vh;
+
+  min-width: 150px;
+  min-height: 20px;
+
+  font-size: 1em;
+  font-weight: bolder;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 10vw;
   background-color: black;
+  color: #1DB954;
 }
