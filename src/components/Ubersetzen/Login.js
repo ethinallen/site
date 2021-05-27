@@ -14,7 +14,7 @@ export default function Login({setToken}) {
               Ubersetzen
             </div>
             <div id="description">
-              Ubersetzen is an app for translating the lyrics to you're currently playing song on Spotify. Sign in to get started!
+              Ubersetzen is an app for displaying and translating the lyrics to your currently playing song on Spotify. Log in to get started!
             </div>
 
           <div id="button-container">
