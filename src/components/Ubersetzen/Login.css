@@ -24,16 +24,17 @@
   font-weight: 400;
   text-align: center;
 
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #description-container {
-  height: 80vh;
-  width: 100vw;
   top: 15vh;
 
-  padding: 2rem;
+  padding: 20px;
   margin-bottom: 1rem;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   display: flex;
   flex-direction: column;
@@ -50,7 +51,6 @@
 }
 
 #button-container {
-
   display: flex;
   justify-content: center;
 }
