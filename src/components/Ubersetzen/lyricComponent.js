@@ -23,7 +23,7 @@ function Lyrics(props) {
 
   if(data.isLoading || data.isError){
       return(
-        <div id="loading"><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
+        <div id="lyric-container"><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
       )
   }
 

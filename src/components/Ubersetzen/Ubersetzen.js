@@ -4,6 +4,8 @@ import Login from './Login';
 
 import Lyrics from './lyricComponent';
 import CurrentPlay from './currentlyPlayingCard';
+import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined';
+
 
 import { useCurrent } from '../../net/currentPlaying'
 
@@ -30,8 +32,9 @@ function Ubersetzen(props) {
 
     return (
       <>
+
       <div className="contentContainer">
-        <div id="header"> Ubersetzen </div>
+      <div id="header"> <MusicNoteOutlinedIcon style={{ fontSize: 30 }}/>Ubersetzen </div>
         <div className="contentColumn">
             <CurrentPlay token={token} />
             <Lyrics data={current} token={token}/>
