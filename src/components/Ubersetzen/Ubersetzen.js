@@ -32,7 +32,6 @@ function Ubersetzen(props) {
 
     return (
       <>
-
       <div className="contentContainer">
       <div id="header"> <MusicNoteOutlinedIcon style={{ fontSize: 30 }}/>Ubersetzen </div>
         <div className="contentColumn">

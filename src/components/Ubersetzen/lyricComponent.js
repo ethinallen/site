@@ -23,7 +23,7 @@ function Lyrics(props) {
 
   if(data.isLoading || data.isError){
       return(
-        <div id="lyric-container"><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
+        <div className="lyric-container"><ReactLoading type="cylon" color="#fff" />waiting on lyrics... </div>
       )
   }
 
@@ -44,7 +44,7 @@ function Lyrics(props) {
             })}
           </div>
           <div className="lyrics">
-            {data.data.lyrics.split("\n").map((i,key) => {
+            {data.data.translation.split("\n").map((i,key) => {
             return <div key={key}>{i}</div> ;
             })}
           </div>

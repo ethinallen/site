@@ -11,6 +11,7 @@
   padding-bottom: 5vh;
   padding-top: 10vh;
 
+
   justify-content: center;
   display: flex;
 }
@@ -70,10 +71,10 @@
   padding-top: 3vh;
   padding-bottom: 3vh;
   color: white;
-  padding-left: 5vw;
+  padding-left: 1vw;
   padding-right: 5vw;
   /* margin: 10vw; */
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
   line-height: 1.5em;
   background-color: rgba(169,169,169, .25);
 
@@ -88,10 +89,15 @@
 }
 
 .lyrics {
+  top:0;
   min-width: 320px;
   max-width: 35vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+  border-width: 1px;
+  border-color: white;
+
 }
 
 #loading {
