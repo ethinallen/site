@@ -5,9 +5,9 @@ import './Personal.css'
 
 const Personal = () => (
   <div className="page" id="page-personal">
-    <div className="bimage"></div>
+    <div className="bg_image" id="bkg_personal"></div>
       <div className="header-container" id="header-personal">
-        <div id="personal" className="personal-container">
+        <div className="personal-container" id="personal">
           <h3>
           Outside of work, I love Formula 1, Golf, language learning, and
           adventures. If I’m not coding you can likely find me driving

@@ -8,6 +8,13 @@
   top: 0px;
 }
 
+.bg_image {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  background-size: cover;
+}
+
 li {
   margin: 5vh;
 }

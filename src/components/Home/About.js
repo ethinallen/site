@@ -6,7 +6,7 @@ import './About.css'
 
 const About = () => (
   <div className="page" id="page-about">
-    <div id="about-background"></div>
+    <div className="bg_image" id="bkg_about"></div>
 
 
     <div className="header-container" id="header-about">

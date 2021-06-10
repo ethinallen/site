@@ -17,7 +17,7 @@ function download() {
 const Header = () => (
 
   <div className="page" id="page-header">
-    <div className="bg_image"></div>
+    <div className="bg_image" id="bkg_header"></div>
 
     <div id="header-container">
 
@@ -42,7 +42,7 @@ const Header = () => (
         My name is Andrew Emery. I received my BS in Industrial Engineering from
         Clemson University in May of 2021. While I may have done my undergrad in
         Industrial Engineering, professionally I am a cloud consultant /
-        software developer. 
+        software developer.
       </h3>
       </div>
     </div>

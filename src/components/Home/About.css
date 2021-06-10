@@ -6,8 +6,12 @@
   left: 0;
 }
 
-#about-background {
+#bkg_about {
+  right: 0;
+  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/IMG_5268.jpg');
+}
 
+#about-background {
   position: absolute;
   width: 50vw;
   height: 100vh;
@@ -18,7 +22,6 @@
   justify-content: center;
   background-color: white;
 
-  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/IMG_5268.jpg');
   background-size: cover;
 }
 

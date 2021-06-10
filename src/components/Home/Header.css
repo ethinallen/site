@@ -2,12 +2,8 @@
   background-color: #293241;
 }
 
-.bg_image {
-  height: 100vh;
-  width: 50vw;
+#bkg_header {
   background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png');
-  background-size: cover;
-  background-color: grey;
 }
 
 #header-container {
