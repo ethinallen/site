@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Card, Image } from 'semantic-ui-react';
+
 import Typing from 'react-typing-animation';
 import './Header.css'
 
@@ -14,27 +16,44 @@ function download() {
 
 const Header = () => (
 
-  <header className="App-header">
+  <div className="page" id="page-header">
     <div className="bg_image"></div>
 
-    <div id="typing-container">
-      <Typing speed={40}>
-        <span>My name is Drew Emery.</span>
-        <Typing.Delay ms={1000} />
-        <Typing.Backspace count={23} />
-        <span>I am graduating May 2021.</span>
-        <Typing.Delay ms={1000} />
-        <Typing.Backspace count={25} />
-        <span>I am seeking full time work.</span>
-        <Typing.Delay ms={1000} />
-        <Typing.Backspace count={28} />
-        <span><button className="download-button" onClick={download}>Click me</button> to download my resume! </span>
-        <Typing.Delay ms={5000} />
-        <span>If you're going to loiter this long...<Typing.Delay ms={1500} /> you might as well check out <Link to="/gitter" >Gitter</Link></span>
-      </Typing>
+    <div id="header-container">
+
+    <div id="card-container">
+      <Card>
+        <Image
+          src={'https://misc-site-storage.s3.us-east-2.amazonaws.com/drew.jpg'}
+          size={'massive'}
+        />
+        <Card.Content>
+          <Card.Header>Drew Emery</Card.Header>
+          <Card.Meta>Cloud Consultant</Card.Meta>
+          <Card.Description>
+            I am currently a cloud consultant at Ahead. I like helping people find savings by moving to the cloud and building scalable architectures.
+          </Card.Description>
+        </Card.Content>
+      </Card>
     </div>
 
-  </header>
+      <div id="personal-header" className="personal-container">
+      <p>
+        My name is Andrew Emery. I received my BS in Industrial Engineering from
+        Clemson University in May of 2021. While I may have done my undergrad in
+        Industrial Engineering, professionally I am a cloud consultant /
+        software developer. Ever since my first cloud deployment on AWS I was
+        hooked. I wanted to build cooler projects and deploy them using the
+        cloud. I think that almost every business stands to benefit from using
+        the cloud and I am here to help anyone who wants to see if there’s any
+        money they can save in doing so. Building scalable, reliable
+        architecture using the cloud is the future to enabling companies to
+        serve customers the best while getting the most bang for their buck.
+      </p>
+      </div>
+    </div>
+
+  </div>
 )
 
 export default Header;

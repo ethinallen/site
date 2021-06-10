@@ -1,33 +1,36 @@
-.ring {
-  position: absolute;
-  z-index: 2;
+#page-about {
+  background-color: #EE6C4D;
 }
 
-#about {
+#header-about {
+  left: 0;
+}
+
+#about-background {
+
   position: absolute;
-  top: 100vh;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
+  right: 0;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  background-color: white;
+
+  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/IMG_5268.jpg');
+  background-size: cover;
 }
 
-#about #card-container {
-    position: relative;
-    right: 10vw;
-  /* left: 10vw; */
-  /* top: 20vh; */
-}
 
-#about #title-container {
-  color: #dcdcdc;
-  position: absolute;
-  margin: 5px;
-  padding: 40px;
-  font-family: 'Merriweather';
-  font-size: 8vh;
-  width: 40vw;
-  min-width: 400px;
+#about-container {
+  font-size: 1rem;
+  font-weight: bold;
+  /* left: 5vw; */
+  color: black;
+
+  width: 50%;
+  height: 100px;
+  min-width: 350px;
+  margin: 5vh;
 }

@@ -1,0 +1,46 @@
+.bimage {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  background-position: bottom center;
+
+  background-image: url('https://misc-site-storage.s3.us-east-2.amazonaws.com/IMG_3878.png');
+  background-size: cover;
+}
+
+#page-personal {
+  height: 100vh;
+  width: 100vw;
+  background-color: #3D5A80;
+}
+
+.personal-container {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+
+  position: relative;
+
+  z-index: 10;
+
+}
+
+#personal {
+  color: black;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  right: 0;
+  top:0;
+
+  color:white;
+
+  width: 40%;
+  height: 100vh;
+  min-width: 350px;
+}

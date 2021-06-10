@@ -1,32 +1,29 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
-import { Card, Image } from 'semantic-ui-react';
 import './About.css'
 
 
 const About = () => (
-  <div id="about">
-    <div id="card-container">
-      <Parallax
-        offsetXMin={-50}
-        offsetXMax={50}
-        className="ring"
-      >
-        <Card>
-          <Image
-            src={'https://misc-site-storage.s3.us-east-2.amazonaws.com/drew.jpg'}
-            size={'massive'}
-          />
-          <Card.Content>
-            <Card.Header>Drew Emery</Card.Header>
-            <Card.Meta>Software Developer</Card.Meta>
-            <Card.Description>
-              My name is Drew. I'm unconventional, determined, and the the next employee you want to hire.
-            </Card.Description>
-          </Card.Content>
-        </Card>
-      </Parallax>
+  <div className="page" id="page-about">
+    <div id="about-background"></div>
+
+
+    <div className="header-container" id="header-about">
+      <div id="about-container">
+        <p>
+          My name is Andrew Emery. I received my BS in Industrial Engineering from
+          Clemson University in May of 2021. While I may have done my undergrad in
+          Industrial Engineering, professionally I am a cloud consultant /
+          software developer. Ever since my first cloud deployment on AWS I was
+          hooked. I wanted to build cooler projects and deploy them using the
+          cloud. I think that almost every business stands to benefit from using
+          the cloud and I am here to help anyone who wants to see if there’s any
+          money they can save in doing so. Building scalable, reliable
+          architecture using the cloud is the future to enabling companies to
+          serve customers the best while getting the most bang for their buck.
+        </p>
+      </div>
     </div>
   </div>
 )
