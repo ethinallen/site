@@ -38,18 +38,12 @@ const Header = () => (
     </div>
 
       <div id="personal-header" className="personal-container">
-      <p>
+      <h3>
         My name is Andrew Emery. I received my BS in Industrial Engineering from
         Clemson University in May of 2021. While I may have done my undergrad in
         Industrial Engineering, professionally I am a cloud consultant /
-        software developer. Ever since my first cloud deployment on AWS I was
-        hooked. I wanted to build cooler projects and deploy them using the
-        cloud. I think that almost every business stands to benefit from using
-        the cloud and I am here to help anyone who wants to see if there’s any
-        money they can save in doing so. Building scalable, reliable
-        architecture using the cloud is the future to enabling companies to
-        serve customers the best while getting the most bang for their buck.
-      </p>
+        software developer. 
+      </h3>
       </div>
     </div>
 
