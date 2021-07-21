@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, Image } from 'semantic-ui-react';
 
-import Typing from 'react-typing-animation';
 import './Header.css'
 
 function download() {
@@ -19,7 +18,7 @@ const Header = () => (
   <div className="page" id="page-header">
     <div className="bg_image" id="bkg_header"></div>
 
-    <div id="header-container">
+    <div className="header-container" id="header-header">
 
     <div id="card-container">
       <Card>
@@ -38,12 +37,12 @@ const Header = () => (
     </div>
 
       <div id="personal-header" className="personal-container">
-      <h3>
-        My name is Andrew Emery. I received my BS in Industrial Engineering from
-        Clemson University in May of 2021. While I may have done my undergrad in
-        Industrial Engineering, professionally I am a cloud consultant /
-        software developer.
-      </h3>
+        <h3>
+          My name is Andrew Emery. I received my BS in Industrial Engineering from
+          Clemson University in May of 2021. While I may have done my undergrad in
+          Industrial Engineering, professionally I am a cloud consultant /
+          software developer.
+        </h3>
       </div>
     </div>
 

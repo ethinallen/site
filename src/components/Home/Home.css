@@ -13,23 +13,21 @@
   height: 100vh;
   width: 50vw;
   background-size: cover;
-}
-
-li {
-  margin: 5vh;
+  /* display: none; */
 }
 
 .header-container {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  width: 50vw;
+  width: auto;
   height: 100vh;
-
   top:0;
+}
+
+li {
+  margin: 5vh;
 }
 
 .download-button {
@@ -45,4 +43,9 @@ li {
   border-width: 1px;
   border-style: solid;
   border-color: white;
+}
+
+.snapper {
+  height:100vh;
+  scroll-snap-align: start;
 }

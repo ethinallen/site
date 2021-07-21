@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 
 import { useCurrent } from '../../net/currentPlaying';
 
-import { Card, Grid, Image } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 
 
 function CurrentPlay(props) {
   const [currentArtist, setCurrentArtist] = useState(0)
   const [currentSong, setCurrentSong] = useState(0)
   const [currentURL, setCurrentURL] = useState(0)
-  const [currentLyrics, setCurrentLyrics] = useState(0)
 
   const currentData = useCurrent(props.token)
   console.log(currentData);
