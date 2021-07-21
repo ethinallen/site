@@ -28,7 +28,7 @@ class Home extends Component {
               color: 'white'
             }}
             headline={'My name is Drew Emery.'}
-            subtext={'I am eager to learn more about building better architectures for enterpirse solutions.'}
+            subtext={"I am a recent Clemson University Alumn. I like biking, racing, and small Japanese cars. I love learning and challenging myself. Scroll to learn more about me!"}
           />
         </div>
         <div className="Page" id="second">
