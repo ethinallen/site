@@ -8,7 +8,9 @@ function Page(props) {
       <div className="textBlock" style={props.textBlockStyle}>
         <div className="text-container">
           <div style={props.color}>{props.headline}</div>
-          <div className="subtext" style={props.textBlockStyle}>{props.subtext}</div>
+          <div className="subtext-container">
+            <div className="subtext" style={props.textBlockStyle}>{props.subtext}</div>
+          </div>
         </div>
       </div>
 

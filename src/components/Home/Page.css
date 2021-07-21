@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @media screen and (min-width: 576px) {
   .textBlock {
@@ -33,15 +34,23 @@ a {
   color: white;
 }
 
-.subtext {
-  font-size: 1rem;
-  margin-top: 5vh;
+.subtext-container {
   margin: 5%;
+  left: 50%;
+  top: 50%;
+  max-width: 500px;
+}
+
+.subtext {
+  font-family: 'Open Sans', sans-serif;
+
+  font-size: 1.3rem;
+  margin-top: 5vh;
+
 }
 
 #page-container {
   position: absolute;
-
 
   padding: 0px;
   margin: 0px;
