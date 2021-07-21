@@ -28,7 +28,7 @@ class Home extends Component {
               color: 'white'
             }}
             headline={'My name is Drew Emery.'}
-            subtext={"I am a recent Clemson University Alumn. I like biking, racing, and small Japanese cars. I love learning and challenging myself. Scroll to learn more about me!"}
+            subtext={"I am a recent Clemson University Alum. I like biking, racing, and small Japanese cars. I love learning and challenging myself. Scroll to learn more about me!"}
           />
         </div>
         <div className="Page" id="second">
@@ -63,7 +63,7 @@ class Home extends Component {
         }}
 
           headline={"I'm based out of Seattle."}
-          subtext={"My watch never left Seattle time! From the moment I crossed into PST this winter I set my watch and only looked forward. The Pacific Northwest is my favorite locatle and I look forward to making the Rainy City my home."}
+          subtext={"My watch never left Seattle time! From the moment I crossed into PST this winter I set my watch and only looked forward. The Pacific Northwest is my favorite locale and I look forward to making the Rainy City my home."}
           />
         </div>
 
