@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Card, Grid, Image } from 'semantic-ui-react';
 import queryString from 'query-string';
 import Login from './Login';
 
@@ -8,16 +7,12 @@ import CurrentPlay from './currentlyPlayingCard';
 import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined';
 
 
-import { useToken } from '../../net/token'
 import { useCurrent } from '../../net/currentPlaying'
-import { useLyrics } from '../../net/lyrics'
 
 import './Ubersetzen.css';
 
 function Ubersetzen(props) {
   const [token, setToken] = useState(0);
-  const [currentLyrics, setCurrentLyrics] = useState(0)
-  const [currentData, setCurrentData] = useState(0)
 
   const current = useCurrent(token)
 
@@ -37,7 +32,6 @@ function Ubersetzen(props) {
 
     return (
       <>
-
       <div className="contentContainer">
       <div id="header"> <MusicNoteOutlinedIcon style={{ fontSize: 30 }}/>Ubersetzen </div>
         <div className="contentColumn">

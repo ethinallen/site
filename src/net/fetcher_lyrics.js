@@ -1,6 +1,6 @@
 export async function fetcherLyrics(artist, songTitle){
     return new Promise((resolve, reject)=>{
-        fetch('https://arbeiter.xyz:8888/lyrics/' + artist + '/' + songTitle)
+        fetch('http://localhost:8888/testLyrics/' + artist + '/' + songTitle)
         .then(res=>{
             const data = res.json()
             if(res.ok){
