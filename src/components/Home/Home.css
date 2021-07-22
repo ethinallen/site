@@ -1,34 +1,12 @@
 .page {
   height: 100vh;
   width: 100vw;
-  margin: 0;
   padding: 0;
 
   position: sticky;
   top: 0px;
 }
 
-.bg_image {
-  position: absolute;
-  height: 100vh;
-  width: 50vw;
-  background-size: cover;
-  /* display: none; */
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: 100vh;
-  top:0;
-}
-
-li {
-  margin: 5vh;
-}
 
 .download-button {
   border: none;
@@ -43,9 +21,4 @@ li {
   border-width: 1px;
   border-style: solid;
   border-color: white;
-}
-
-.snapper {
-  height:100vh;
-  scroll-snap-align: start;
 }
