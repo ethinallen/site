@@ -19,7 +19,7 @@ class Home extends Component {
             imageBlockStyle = {{
                 ...IMAGESTYLE,
                 float: "left",
-                backgroundImage: "url(https://misc-site-storage.s3.us-east-2.amazonaws.com/drew.jpg)",
+                backgroundImage: "url(https://cdn.andrewemery.io/drew.jpg)",
             }}
 
             textBlockStyle={{
@@ -41,7 +41,7 @@ class Home extends Component {
             imageBlockStyle={{
               ...IMAGESTYLE,
               float:'right',
-              backgroundImage: 'url(https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png)',
+              backgroundImage: 'url(https://cdn.andrewemery.io/background.png)',
               backgroundPosition: "bottom right"
             }}
 
@@ -55,7 +55,7 @@ class Home extends Component {
             imageBlockStyle={{
               ...IMAGESTYLE,
               float: 'left',
-              backgroundImage: 'url(https://misc-site-storage.s3.us-east-2.amazonaws.com/needle_telescope.png)',
+              backgroundImage: 'url(https://cdn.andrewemery.io/needle_telescope.png)',
             }}
           textBlockStyle={{
             float:'right',
@@ -72,7 +72,7 @@ class Home extends Component {
             imageBlockStyle={{
               ...IMAGESTYLE,
               float: 'right',
-              backgroundImage: 'url(https://misc-site-storage.s3.us-east-2.amazonaws.com/IMG_3857.png)',
+              backgroundImage: 'url(https://cdn.andrewemery.io/IMG_3857.png)',
               backgroundPosition: "75% 10%"
             }}
           textBlockStyle={{
