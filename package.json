@@ -20,15 +20,16 @@
     "react-page-scroller": "^2.1.0",
     "react-particles-js": "^3.4.1",
     "react-player": "^2.9.0",
+    "react-rain-animation": "^1.0.4",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^1.1.5",
     "react-scroll-parallax": "^2.3.4",
     "react-sticky": "^6.0.3",
     "react-typing-animation": "^1.6.2",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "swr": "^0.5.5",
-    "video.js": "^7.11.4"
+    "video.js": "^7.7.4"
   },
   "scripts": {
     "start": "react-scripts start",

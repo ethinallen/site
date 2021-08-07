@@ -31,16 +31,19 @@ function Ubersetzen(props) {
   }
 
     return (
-      <>
+      <div>
       <div className="contentContainer">
-      <div id="header"> <MusicNoteOutlinedIcon style={{ fontSize: 30 }}/>Ubersetzen </div>
+        <div id="header">
+          <MusicNoteOutlinedIcon style={{ fontSize: 30 }}/>
+          Ubersetzen
+        </div>
         <div className="contentColumn">
             <CurrentPlay token={token} />
             <Lyrics data={current} token={token}/>
           </div>
       </div>
 
-      </>
+      </div>
     );
 }
 

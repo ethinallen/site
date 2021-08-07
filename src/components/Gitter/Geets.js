@@ -3,7 +3,7 @@ import { Card, Grid, Image } from 'semantic-ui-react';
 
 function Geets({ geets }) {
   return (
-    <>
+    <div>
      {geets.map((geet) => (
        <Grid.Row>
           <Grid.Column width={8}>
@@ -25,7 +25,7 @@ function Geets({ geets }) {
           </Grid.Column>
         </Grid.Row>
      ))}
-   </>
+   </div>
   )
 };
 

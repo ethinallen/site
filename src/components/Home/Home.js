@@ -12,7 +12,7 @@ class Home extends Component {
 
   render() {
     return (
-      <>
+      <div id="testing">
         <div className="home-container">
         <div className="Page" id="first">
           <Page
@@ -81,10 +81,10 @@ class Home extends Component {
         }}
 
           headline={"I am unconventional."}
-          subtext={"I'm unapologetically unconventional and I think everyone could benefit from the occasional deviation from the beaten path. I try to expose myself to as many differnt experiences and viewpoints as possible. If you feel so inclined, contact me so we can get to know more about each other."} />
+          subtext={"I'm unconventional and I think everyone could benefit from the occasional deviation from the beaten path. I try to expose myself to as many differnt experiences and viewpoints as possible. If you feel so inclined, contact me so we can get to know more about each other."} />
         </div>
         </div>
-      </>
+      </div>
     );
   }
 }

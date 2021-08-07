@@ -8,6 +8,7 @@ import Van from "./components/Van/Van.js"
 import Gitter from "./components/Gitter/Gitter.js"
 import Video from "./components/Video/VideoPlayer.js"
 import Ubersetzen from "./components/Ubersetzen/Ubersetzen.js"
+import Seattle from "./components/Seattle/Seattle.js"
 
 const history = createBrowserHistory();
 
@@ -36,6 +37,7 @@ export default function App(){
       <Route exact path="/video" component={Video} />
       <Route exact path="/gitter" component={Gitter} />
       <Route exact path="/ubersetzen" component={Ubersetzen} />
+      <Route exact path="/seattle" component={Seattle} />
     </Switch>
   </Router>
 );
