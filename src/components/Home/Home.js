@@ -12,14 +12,14 @@ class Home extends Component {
 
   render() {
     return (
-      <>
+      <div id="testing">
         <div className="home-container">
         <div className="Page" id="first">
           <Page
             imageBlockStyle = {{
                 ...IMAGESTYLE,
                 float: "left",
-                backgroundImage: "url(https://misc-site-storage.s3.us-east-2.amazonaws.com/drew.jpg)",
+                backgroundImage: "url(https://cdn.andrewemery.io/drew.jpg)",
             }}
 
             textBlockStyle={{
@@ -41,7 +41,7 @@ class Home extends Component {
             imageBlockStyle={{
               ...IMAGESTYLE,
               float:'right',
-              backgroundImage: 'url(https://misc-site-storage.s3.us-east-2.amazonaws.com/background.png)',
+              backgroundImage: 'url(https://cdn.andrewemery.io/background.png)',
               backgroundPosition: "bottom right"
             }}
 
@@ -55,7 +55,7 @@ class Home extends Component {
             imageBlockStyle={{
               ...IMAGESTYLE,
               float: 'left',
-              backgroundImage: 'url(https://misc-site-storage.s3.us-east-2.amazonaws.com/needle_telescope.png)',
+              backgroundImage: 'url(https://cdn.andrewemery.io/needle_telescope.png)',
             }}
           textBlockStyle={{
             float:'right',
@@ -72,7 +72,7 @@ class Home extends Component {
             imageBlockStyle={{
               ...IMAGESTYLE,
               float: 'right',
-              backgroundImage: 'url(https://misc-site-storage.s3.us-east-2.amazonaws.com/IMG_3857.png)',
+              backgroundImage: 'url(https://cdn.andrewemery.io/IMG_3857.png)',
               backgroundPosition: "75% 10%"
             }}
           textBlockStyle={{
@@ -81,10 +81,10 @@ class Home extends Component {
         }}
 
           headline={"I am unconventional."}
-          subtext={"I'm unapologetically unconventional and I think everyone could benefit from the occasional deviation from the beaten path. I try to expose myself to as many differnt experiences and viewpoints as possible. If you feel so inclined, contact me so we can get to know more about each other."} />
+          subtext={"I'm unconventional and I think everyone could benefit from the occasional deviation from the beaten path. I try to expose myself to as many differnt experiences and viewpoints as possible. If you feel so inclined, contact me so we can get to know more about each other."} />
         </div>
         </div>
-      </>
+      </div>
     );
   }
 }

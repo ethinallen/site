@@ -3,6 +3,7 @@ import Particles from 'react-particles-js'
 import Typing from 'react-typing-animation'
 import { Grid } from 'semantic-ui-react'
 import Geets from './Geets'
+import 'semantic-ui-css/semantic.min.css'
 
 import './Gitter.css'
 
@@ -31,7 +32,7 @@ function Gitter() {
         <div id='title-container'>
           <u>gitter.</u>
 
-          <div id="description">
+          <div className="description">
             <Typing speed={10}>
               <span>Twitter...<Typing.Delay ms={1000} /> but for Github commit messages</span>
             </Typing>
@@ -47,9 +48,11 @@ function Gitter() {
         </form>
 
         <div id="grid-container">
-          <Grid centered={true} columns={1}>
-            <Geets geets={geets} />
-          </Grid>
+          <div id="column-container">
+            <Grid centered={true} columns={1}>
+              <Geets geets={geets} />
+            </Grid>
+          </div>
         </div>
 
         <div id="particle-container">

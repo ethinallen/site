@@ -24,6 +24,12 @@
   z-index: 2;
 }
 
+span {
+  color: white;
+  font-family: Merriweather;
+  font-size: 0.7rem;
+}
+
 #description {
   position: inherit;
   margin-top: 5vh;
@@ -31,6 +37,7 @@
   font-size: 1.3vh;
   color: #dcdcdc;
   font-family: 'Roboto';
+  color: white;
 }
 
 #title-container {
@@ -46,12 +53,15 @@
   left: 0;
 }
 
-
+#column-container {
+  width: 30vw;
+  min-width: 300px;
+}
 
 #grid-container {
   position: relative;
   /* margin-top: 35vh; */
-
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
