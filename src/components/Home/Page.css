@@ -11,6 +11,11 @@
     width: 50vw;
     height: 100vh;
   }
+
+  .particleContainer {
+    width: 50vw;
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -23,8 +28,18 @@
     width: 100vw;
     height: 100vh;
   }
+
+  .particleContainer {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
+
+.particleContainer {
+  position: absolute;
+  z-index: 1;
+}
 a {
   border-width: 1px;
   padding: 5px;
@@ -38,6 +53,9 @@ a {
   height: auto;
   max-width: 500px;
 
+  line-height: 1.5rem;
+
+
   text-align: center;
 }
 
@@ -46,19 +64,24 @@ a {
 
   font-size: 1.2rem;
   margin-top: 2vh;
+  z-index: 10;
 }
 
 .text-container {
   position: relative;
   text-align: center;
+  line-height: 3rem;
 
   margin-top: 30vh;
 
   font-size: 3.2em;
   font-weight: bold;
 
-  margin-left: 20px;
-  margin-right: 20px;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  width: 50%;
 
   font-family: 'Roboto', sans-serif;
 }

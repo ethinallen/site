@@ -46,7 +46,7 @@ class Home extends Component {
             }}
 
             headline={aheadLink}
-            subtext={'I am passionate about helping clients build scalable, affordable cloud infrastructure. Email me at drew.emery@ahead.com'}
+            subtext={'I am passionate about helping clients build scalable, affordable cloud infrastructure.'}
             />
         </div>
 
@@ -81,7 +81,7 @@ class Home extends Component {
         }}
 
           headline={"I am unconventional."}
-          subtext={"I'm unconventional and I think everyone could benefit from the occasional deviation from the beaten path. I try to expose myself to as many differnt experiences and viewpoints as possible. If you feel so inclined, contact me so we can get to know more about each other."} />
+          subtext={"I think that everyone could benefit from being a little unconventional. I certainly am. I enjoy my strolls off of the beaten path because I think that is where a lot of innovation can be found."} />
         </div>
         </div>
       </div>
